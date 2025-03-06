@@ -185,16 +185,16 @@ val_dataset = QuestionDataset(val_encodings, val_labels)
 training_args = TrainingArguments(
     output_dir="./results",
     eval_strategy="epoch",
-    learning_rate=1e-5,
-    per_device_train_batch_size=4,
-    per_device_eval_batch_size=4,
-    num_train_epochs=30,
-    weight_decay=0.02,
+    learning_rate=4.020084560964316e-05,
+    per_device_train_batch_size=16,
+    per_device_eval_batch_size=16,
+    num_train_epochs=25,
+    weight_decay=0.1783475858723165,
     load_best_model_at_end=True,
     metric_for_best_model="eval_loss",
     save_strategy="epoch",
-    warmup_ratio=0.1,
-    gradient_accumulation_steps=2,
+    warmup_ratio=0.09403523246342857,
+    gradient_accumulation_steps=4,
 )
 
 
