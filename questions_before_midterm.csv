@@ -1,0 +1,364 @@
+question,label
+if - then command,0
+'nee, wat is het?',0
+door Print("Hallo"),0
+'print("hallo, ik heet guus")',0
+Guus = naam,0
+ik heb geen oplossing hiervoor,0
+print("Hoe heet jij?")  antwoord = naam,0
+'naam = input("hoe heet jij?")  print("Hallo", naam)',0
+print("Hallo +" naam),0
+'hobby = input("Wat is je hobby?")  print("Mijn favoriete bezigheid is ook,", hobby)',0
+hoe doe je dat?,0
+dat werkt nog steeds niet,0
+voornaam = kees,0
+It doesnt do anything,0
+No,0
+no,0
+'Let''s do it about a piece of history',0
+WW2,0
+Isn"t that your job?,0
+school,0
+I meant with code...,0
+maybe a little less complicated?,0
+deze heb ik dus goed gedaan,0
+niet precies hoe ik het deed maar ik denk dat ie klopt,0
+wat moet ik waar invullen,0
+hij gaat als ik dat doe naar de volgende cel,0
+afgeronde som,0
+ja dat denk ik wel,0
+hoe gebruik je pi in python?,1
+Hoe doe je een wortel in python?,1
+hoe verrander je een string naar een inrt,1
+how do you randomize an answer in code,1
+== meaning?,1
+hoe je nauwkeurig pi kunt gebruiken zonder dit getal helemaal uit te typen.,1
+wat is een variable,1
+wat wordt er bedoeld met console?,1
+wat doet type in een code,1
+is integer voor getallen of stukjes tekst?,1
+'wat betekend een error'', 1
+hoe moet ik programmeren''',1
+variabelen in Python hebben een type wat is een type,1
+hoe kun je pi nauwkeurig berekenen zonder het getal uit te typen,1
+hoe kan je de wortel nemen in python,1
+hoe gebruik je pi nauwkeurig zonder alles uit te schrijven,1
+hoe kwadrateer je getallen?,1
+Is there any way to use the if else function to make it so if I do input in the console thats equal to the number 2 then it will print something and if the number is equal or higher then 11 it will output something else but if its another number then that it will output again something else and if I input something except numbers it will give me a custom error message thats gonna be printed in the console,1
+What python code can i put in a file on a website and then run that will help me test for vulnerabilities on my own website,1
+wat is een float,1
+wat is afkorting van float,1
+hoe vermedigvuldig je,1
+how does len() work,1
+how do you swap a item from a list with an input,1
+how to print a list without brackets,1
+wat is een boolean operator,1
+leg elif uit,1
+ik wil dat je niet gelijk het antwoord geeft wat moet ik doen: Maak een while loop die alle even getallen van 2 tot en met 20 print.,1
+'hoe doe je dit dan in de code: Binnen de lus, controleer of getal een even getal is (dit kun je doen door te checken of het restant van getal gedeeld door 2 gelijk is aan 0).',1
+wat  betekent die % okalweer,1
+how do i print hello world in golang,1
+how can i make a new go file at root level in cmd?,1
+and in linux?,1
+'ik heb deze code in de cel staan maar hij gaat naar de volgende. Naam =  input("wat is je naam?")nnleeftijd = int(input("wat is je leeftijd?"))nnprint(f"Hallo {Naam}, over 10 jaar ben je {leeftijd + 10} jaar oud") weet jij hoe ik het op kan lossen dat hij wel de code uitvoert',1
+hoe haal je een naam uit een lijst?,1
+hoe maak je een input waar iemand een getal en een tekst in kan schrijven,1
+hoe maak je een input waar een gebruiker alles in kan schrijven wat hij wilt,1
+hoe maak je een input waar een gebruiker zowel tekst als cijfers in kan typen in hetzelfde stukje,1
+kan je dat uitleggen,1
+Hoe kan je zeggen in een code dat de code moet stoppen met runnen,1
+hoe kan ik pi gebruiken zonder het helemaal uit te typen,1
+hoef ik alleenmaar math.pi te gebruiken,1
+Hoe kan je een bot maken die van 9 opties elke keer niet hetzelfde antwoord kiest,1
+hoe kan je een bot maken die van 9 opties een random optie kiest en niet dezelfde,1
+hoe kan je een optie van een bot verwijderen met een code,1
+kan je een stukje tekst in een andere kleur uit printen,1
+hoe kan ik een getal optellen met een variabele,1
+hoe vraag ik een input met een float,1
+en hoe vraag ik om een input met een string,1
+hoe vraag ik om een input van een getal met een string,1
+hoe zet ik iemands input in een nieuw stukje code?,1
+wat betekent de "f",1
+hoe zorg ik dat er in de output een regel over wordt geslagen,1
+hoe gebruik ik float,1
+hoe vraag ik om een kommagetal,1
+hoe gebruik ik pi zonder het helemaal te typen?,1
+hoe maak je een float,1
+hoe gebruik je nauwkeurig pi kunt gebruiken zonder dit getal helemaal uit te typen.,1
+hoe bereken je het verschil tussen 2 getallen,1
+hoe zorg je ervoor dat de prints een pauze ertussen hebben,1
+hoe voeg je een wortel toe,1
+hoe maak je een meerkeuzeklikvraag,1
+hoe herhaal je een hele code,1
+geef me tips om een gebruiker te begroeten,1
+wat is een f"",1
+wat betekend f",1
+hoe gebruik je len(),1
+wat is een boolean operator,1
+hoe voeg je met een while loop getallen aan een lijst toe,1
+wat is het verschil tussen if en elif,1
+wat is het verschil tussen = en ==,1
+how do i make it so i can repeat the question for another try at cracking the code,1
+what is a boolean opporator,1
+how do i stop a counter from counting,1
+how do you check if a number is even of oneven,1
+Hoe moet ik een score variabele maken?,1
+Hoe codeer ik een score variabele?,1
+Geef me een goede uitleg over hoe ik if/elif moet gebruiken?,1
+'Print nu de volgende som in de code cel hieronder, let hierbij op haakjes. In python kun je ook haakjes in sommen gebruiken:  (drie keer (vier plus zes)) gedeeld door (acht plus vier)',2
+'Kies drie getallen. Sla ze elk op in hun eigen variabele. Print de uitkomst van een rekensom met deze drie variabelen. De rekensom moet ten minste twee operatoren (`+`, `-`, `*`, `/`) gebruiken, en de uitkomst moet `15` zijn.',2
+'Kies drie getallen. Sla ze elk op in hun eigen variabele. Print de uitkomst van een rekensom met deze drie variabelen. De rekensom moet ten minste twee operatoren (`+`, `-`, `*`, `/`) gebruiken, en de uitkomst moet `15` zijn.',2
+'Vraag in de code cel hieronder om de achternaam van de gebruiker. Print vervolgens: ```achternaam```, dat is een mooie achternaam! Waarbij ```achternaam``` de echte achternaam van de gebruiker is.: leeftijd = input("Wat is je leeftijd?")  print(leeftijd + 10)',2
+'Print nu de volgende som in de code cel hieronder, let hierbij op haakjes. In python kun je ook haakjes in sommen gebruiken:  (drie keer (vier plus zes)) gedeeld door (acht plus vier)',2
+'Kies drie getallen. Sla ze elk op in hun eigen variabele. Print de uitkomst van een rekensom met deze drie variabelen. De rekensom moet ten minste twee operatoren (`+`, `-`, `*`, `/`) gebruiken, en de uitkomst moet `15` zijn.',2
+'Kies drie getallen. Sla ze elk op in hun eigen variabele. Print de uitkomst van een rekensom met deze drie variabelen. De rekensom moet ten minste twee operatoren (`+`, `-`, `*`, `/`) gebruiken, en de uitkomst moet `15` zijn.',2
+'Vraag in de code cel hieronder om de achternaam van de gebruiker. Print vervolgens: ```achternaam```, dat is een mooie achternaam! Waarbij ```achternaam``` de echte achternaam van de gebruiker is.: leeftijd = input("Wat is je leeftijd?")  print(leeftijd + 10)',2
+'Vraag in de code cel hieronder om de achternaam van de gebruiker. Print vervolgens: achternaam, dat is een mooie achternaam! Waarbij achternaam de echte achternaam van de gebruiker is.',2
+Wat gebeurt er als je geen int() op line 3 bij de input zet? Op welke line geeft de console een error?,2
+op welke line komt de error dan te staan?,2
+Vandaag gaan we het hebben over variabelen en inputs. Ik wil dat jullie eerst proberen om met behulp van de chatbot een klein idee te krijgen van wat dat is. Jullie gaan dus iets proberen te programmeren zonder dat jullie iets van dit onderwerp af weten. Dit is mogelijk omdat de chatbot jullie met je vragen kan helpen! De opdracht is als volgt:  Vraag in de code cel hieronder om de naam van de gebruiker van je programma en probeer deze naam vervolgens te printen.   Wat is jouw naam?  Thom Hallo Thom,2
+'We gaan een temperatuur omrekenen van Fahrenheit naar Celsius en andersom.nnVraag om 2 inputs:nnEen float voor de waarde van de temperatuurnnEen string die vraagt of het in Fahrenheit of in Celsius isnnFormules:nnCelsius = (Fahrenheit - 32) * 0.5556nnFahrenheit = (Celsius * 1.8) + 32nnAls de waarde in Fahrenheit is, print dan de temperatuur in graden Celsius in een mooie zin. Als de waarde in Celsius is, print dan de temperatuur in graden Fahrenheit in een mooie zin.nnLET OP HOOFDLETTERS!',2
+Vraag om 2 inputs:nnHoogtennBreedtennDoe dan het volgende:nnPrint een rechthoek van # met de gegeven hoogte en breedtennPrint hieronder of de rechthoek een vierkant isnnPrint daaronder wat de oppervlakte van de rechthoek isnnBijvoorbeeld bij hoogte = 3 en breedte = 4:,2
+'Om je naam vraagtnnOm je leeftijd vraagtnnPrint dan: "Hallo [naam], over 10 jaar ben je [leeftijd + 10] jaar oud!"',2
+'Maak een programma dat om 2 getallen met inputs vraagt.nnPrint de grootste van deze 2 getallen!nnAls allebei de getallen even groot zijn, print dan dit getal.',2
+'Sla een wachtwoord op in een variabele. Dit mag een groot getal zijn, of een stuk tekst.nnVraag nu met een input om het wachtwoord.nnAls het wachtwoord correct is (hetzelfde als de variabele), print dan: "Correct wachtwoord, je bent ingelogd!" Als het wachtwoord incorrect is, print dan: "Incorrect wachtwoord, probeer het opnieuw!"nnLET OP voor deze opdracht zijn geen tests',2
+'We gaan een temperatuur omrekenen van Fahrenheit naar Celsius en andersom.nnVraag om 2 inputs:nnEen float voor de waarde van de temperatuurnnEen string die vraagt of het in Fahrenheit of in Celsius isnnFormules:nnCelsius = (Fahrenheit - 32) * 0.5556nnFahrenheit = (Celsius * 1.8) + 32nnAls de waarde in Fahrenheit is, print dan de temperatuur in graden Celsius in een mooie zin. Als de waarde in Celsius is, print dan de temperatuur in graden Fahrenheit in een mooie zin.',2
+'Maak nu een programma dat om 3 getallen met inputs vraagt.nnPrint de grootste van deze 3 getallen.nnAls meerdere getallen even groot zijn en dit is het grootste getal, print dan dit getal.',2
+Deze opdracht bestaat uit twee stappen:nnStap 1:nnMaak een while loop die alle getallen van 1 tot en met 20 print.nnStap 2:nnMaak een while loop die alle even getallen van 2 tot en met 20 print.,2
+'Vraag de gebruiker om een getal en geef met behulp van een if/else statement aan of het getal positief, negatief of nul is.',2
+'Vraag de gebruiker met inputs om een letter, een hoogte en een breedte. Teken nu een rechthoek zoals hieronder:nn########nn########nn########nn########nn########nnDe breedte en hoogte van de rechthoek zijn door de gebruiker te bepalen. De letter wordt gebruikt in plaats van de hashtags.',2
+Gegeven is een lege lijst.nnVoeg met behulp van een while loop de getallen 1 tot en met 10 aan deze lijst toe!nnPrint hierna de lijst met getallen.,2
+'We gaan een gevecht met een zombie simuleren!nnDoe het volgende:nnMaak een lijst met meerdere wapens erinnnSla in een variabele genaamd zwakte een van deze wapens opnnPrint dat de gebruiker een zombie tegen komt en dat hij of zij ready moet zijn om te vechten!nnPrint de lijst met wapensnnGeef de gebruiker een keuze: typ 1 voor een wapen uit de lijst, typ 2 voor je eigen wapennnAls de gebruiker 1 kiest, laat ze dan een wapen uit de lijst kiezennnAls de gebruiker 2 kiest, laat ze dan met een input een wapen bedenken en voeg dit toe aan de lijstnnAls het wapen dat gekozen is hetzelfde is als de zwakte van de zombie win je het gevechtnnAls het wapen anders is verlies je en ga je dood',2
+Gegeven is het begin van een programma.nnZorg dat als de gebruiker een keuze maakt deze code ook wordt uitgevoerd.nnVraag als de gebruiker 2 of 3 kiest om nog een input!,2
+Als het salaris tussen de 40.000 en 100.000 is en de werkdruk is laag print dan. hoe geef ik dit aan,2
+'Vraag om 1 input:nnGebruikte stroom in kiloWatt (getal)nnWe gaan de totale stroomprijs uitrekenen en printen, dit doen we als volgt:nnEerste 100 kiloWatt --> gratisnnTweede 100 kiloWatt (van 100 t/m 200) --> 5 euro per kiloWattnnDe rest --> 10 euro per kiloWatt',2
+vul de antwoorden in bij de comments: # Voorbeeld 1nnleeftijd = 18nn nnif leeftijd >= 18:nn print("Je bent oud genoeg om zelf auto te rijden!")nn# Voorbeeld 2nngetal1 = 11nn nnif getal1 == 10:nn  print("Dit wordt geprint omdat de conditie True was")nnelse:nn  print("Dit wordt geprint omdat de conditie False was")nn# Voorbeeld 3nngetal2 = 5nnprint("Ik heb een nummer tussen de 1 en de 10 bedacht")nngok = int(input("Doe een gok!"))nnif gok == getal2:nn  print("Goed!")nnif gok < getal2:nn  print("Te laag!")nnif gok > getal2:nn  print("Te hoog!")nn# Wat gebeurt er als je "2" invult bij de gok?nn  # Antwoord nn# Wat gebeurt er als je "-5" invult bij de gok?nn  # Antwoordnn# Wat betekenen de tekens < en > op lijn 25 en 27?nn  # Antwoordnn# Wat gebeurt er als je op de eerste if bij gok "if gok = getal2:" ipv "if gok == getal2:" zet?nn  # Antwoordnn# Wat valt je op aan elke regel onder een if statement?nn  # Antwoord,2
+'De chatbot moet het volgende doen:nnVraag de gebruiker om zijn naam en sla dit op in een variabelennBegroet de gebruikernnStel 3 vragen over de gebruiker en sla de antwoorden op in 3 variabelennnDe chatbot geeft vervolgens een reactie op de antwoorden van de gebruiker, gebruik de gebruiker zijn naam in je antwoorden, bijvoorbeeld Dat is een leuke hobby, Johan!nnGeef een samenvatting van alle antwoorden van de gebruiker in één zin',2
+'Maak nu een programma dat om 3 getallen met inputs vraagt.nnPrint de grootste van deze 3 getallen.nnAls meerdere getallen even groot zijn en dit is het grootste getal, print dan dit getal.',2
+Maak een while loop die alle getallen van 1 tot en met 20 print.,2
+Wat heb je nodig?nn- Een while loop die doorgaat tot het getal geraden isnn- Een teller voor het aantal pogingennn- Input voor het radennn- If/elif/else voor het checken van te hoog/te laag,2
+Vraag om 2 inputs:nnHoogtennBreedtennDoe dan het volgende:nnPrint een rechthoek van # met de gegeven hoogte en breedte,2
+'Maak een programma dat:nnOm je naam vraagtnnOm je leeftijd vraagtnnPrint dan: "Hallo [naam], over 10 jaar ben je [leeftijd + 10] jaar oud!"nnLet op: Denk goed na over de types van je variabelen',2
+'Opdracht 3 - Grootste GetalnnMaak een programma dat om 2 getallen met inputs vraagt.nnPrint de grootste van deze 2 getallen!nnAls allebei de getallen even groot zijn, print dan dit getal.',2
+'Opdracht 3 - Grootste GetalnnMaak een programma dat om 2 getallen met inputs vraagt.nnPrint de grootste van deze 2 getallen!nnAls allebei de getallen even groot zijn, print dan dit getal.',2
+'Opdracht 4 - Wachtwoord RadennnSla een wachtwoord op in een variabele. Dit mag een groot getal zijn, of een stuk tekst.nnVraag nu met een input om het wachtwoord.nnAls het wachtwoord correct is (hetzelfde als de variabele), print dan: "Correct wachtwoord, je bent ingelogd!" Als het wachtwoord incorrect is, print dan: "Incorrect wachtwoord, probeer het opnieuw!"nnLET OP voor deze opdracht zijn geen tests',2
+'Opdracht 5 - Temperatuur OmrekenennnWe gaan een temperatuur omrekenen van Fahrenheit naar Celsius en andersom.nnVraag om 2 inputs:nnEen float voor de waarde van de temperatuurnnEen string die vraagt of het in Fahrenheit of in Celsius isnnFormules:nnCelsius = (Fahrenheit - 32) * 0.5556nnFahrenheit = (Celsius * 1.8) + 32nnAls de waarde in Fahrenheit is, print dan de temperatuur in graden Celsius in een mooie zin. Als de waarde in Celsius is, print dan de temperatuur in graden Fahrenheit in een mooie zin.nnLET OP HOOFDLETTERS!',2
+Opdracht 6 - QuiznnIn deze opdracht ga je zelf een quiz maken. Je mag zelf bepalen of de quiz meerkeuze of met vrije antwoorden is.nnBedenk vragen en vraag om antwoord met behulp van inputs. Check hierna of het antwoord goed is. Als het antwoord goed is maak dan een variabele score 1 punt hoger.nnAls alle vragen geweest zijn print dan de score aan de user en geef hem of haar een cijfer!,2
+Maak een while loop die alle getallen van 1 tot en met 20 print,2
+'Vraag de gebruiker met inputs om een letter, een hoogte en een breedte. Teken nu een rechthoek zoals hieronder:nn```nn########nn########nn########nn########nn########nn```',2
+'los dit op ## Opdracht 2 - StroomrekeningnnVraag om 1 input:nn- Gebruikte stroom in kiloWatt (getal)nnWe gaan de totale stroomprijs uitrekenen en printen, dit doen we als volgt:nn- Eerste 100 kiloWatt --> gratisnn- Tweede 100 kiloWatt (van 100 t/m 200) --> 5 euro per kiloWattnn- De rest --> 10 euro per kiloWattnnVoorbeeld:nn350 kiloWattnnEerste 100 --> 0nnTweede 100 --> 100 * 5 = 500nnRest (150) --> 150 * 10 = 1500nnDus kosten: 2000 euro',2
+geef een code om fooi te berekenen,2
+maak een code om de oppervlakte en de omtrek van een cirkel te berekenen,2
+geef een code voor het vragen van een naam,2
+'Maak een programma dat:nnOm je naam vraagtnnOm je leeftijd vraagtnnPrint dan: "Hallo [naam], over 10 jaar ben je [leeftijd + 10] jaar oud!"',2
+'Maak een programma dat om 2 getallen met inputs vraagt.nnPrint de grootste van deze 2 getallen!nnAls allebei de getallen even groot zijn, print dan dit getal.',2
+'Sla een wachtwoord op in een variabele. Dit mag een groot getal zijn, of een stuk tekst.nnVraag nu met een input om het wachtwoord.nnAls het wachtwoord correct is (hetzelfde als de variabele), print dan: "Correct wachtwoord, je bent ingelogd!" Als het wachtwoord incorrect is, print dan: "Incorrect wachtwoord, probeer het opnieuw!"',2
+Sla het wachtwoord: HOI123 op in een variabele,2
+hoe kan je een het grootste getal van 3 getalen printen,2
+Maak een while loop die alle even getallen van 2 tot en met 20 print.,2
+'wat moet je doen als er bij een opdracht staat Maak een programma dat:nnOm je naam vraagtnnOm je leeftijd vraagtnnPrint dan: "Hallo [naam], over 10 jaar ben je [leeftijd + 10] jaar oud!"',2
+Maak een while loop die alle getallen van 1 tot en met 20 print.,2
+Vraag om 2 inputs:nnHoogtennBreedtennDoe dan het volgende:nnPrint een rechthoek van # met de gegeven hoogte en breedtennPrint hieronder of de rechthoek een vierkant isnnPrint daaronder wat de oppervlakte van de rechthoek isnnBijvoorbeeld bij hoogte = 3 en breedte = 4:,2
+Vraag om 2 inputs:nnHoogtennBreedtennDoe dan het volgende:nnPrint een rechthoek van # met de gegeven hoogte en breedtennPrint hieronder of de rechthoek een vierkant isnnPrint daaronder wat de oppervlakte van de rechthoek isnngebruik hierbij de hoogte is 3 en de breedte is 4,2
+Gegeven is een lege lijst.nnVoeg met behulp van een while loop de getallen 1 tot en met 10 aan deze lijst toe!nnPrint hierna de lijst met getallen.,2
+Opdracht 1 - Oppervlakte van een rechthoeknnSchrijf een programma dat de oppervlakte van een rechthoek berekent.nnVraag om inputs voor de lengte en de breedte van de rechthoeknnBereken de oppervlakte en sla het op in een variabelennPrint de oppervlakte in een zin,2
+'Vraag de gebruiker met inputs om een letter, een hoogte en een breedte. Teken nu een rechthoek zoals hieronder:nn```nn########nn########nn########nn########nn########nn```nnDe breedte en hoogte van de rechthoek zijn door de gebruiker te bepalen. De letter wordt gebruikt in plaats van de hashtags.',2
+Gegeven is een lege lijst.shnnVoeg met behulp van een while loop de getallen 1 tot en met 10 aan deze lijst toe!nnPrint hierna de lijst met getallen.,2
+how do i make a drawing of a rectangle using # by only giving the hight and the width,2
+Maak een while loop die alle even getallen van 2 tot en met 20 print.,2
+Hoe maak ik een code die weet welke van de 3 getallen het grootste is?,2
+Hoe maak ik een quiz?,2
+Maak een while loop die alle getallen van 1 tot en met 20 print.,2
+Maak een while loop die alle even getallen van 2 tot en met 20 print.,2
+Vraag om 2 inputs:nn    Hoogtenn    BreedtennDoe dan het volgende:nn    Print een rechthoek van # met de gegeven hoogte en breedtenn    Print hieronder of de rechthoek een vierkant isnn    Print daaronder wat de oppervlakte van de rechthoek is,2
+Print dit woord net zo vaak als het gegeven getal. Doe dit met behulp van een loop!,2
+'Gegeven is een lijst met drie steden:nnsteden = ["Amsterdam", "Rotterdam", "Utrecht"]nnVoer de volgende stappen uit:nn    Vraag de gebruiker om een stad toe te voegen aan de lijst en voeg deze toe met behulp van append().nn    Vervang de tweede stad in de lijst door een stad die de gebruiker invoert.nn    Vraag de gebruiker om een getal tussen 0 en het aantal steden min 1, en print de stad op die positie.nn    Verwijder de eerste stad uit de lijst en print de nieuwe lijst.nn    Print de totale aantal steden in de lijst met behulp van len().',2
+'Vraag om 1 input:nn    Gebruikte stroom in kiloWatt (getal)nnWe gaan de totale stroomprijs uitrekenen en printen, dit doen we als volgt:nn    Eerste 100 kiloWatt --> gratisnn    Tweede 100 kiloWatt (van 100 t/m 200) --> 5 euro per kiloWattnn    De rest --> 10 euro per kiloWatt',2
+'Gebruik bij deze vraag een while loop. Print de getallen van 10 tot en met 1, begin bij 10 en eindig bij 1',2
+'Gebruik bij deze vraag while loops. Print de eerste 5 machten van 3, dus 3, 9, 27, 81, 243',2
+'Vraag de gebruiker om 2 inputs:nn    Salaris (getal)nn    Werkdruk (hoog, laag)nnAls het salaris boven de 100.000 is en de werkdruk is laag print dan Wat een baan!.nnAls het salaris boven de 100.000 is en de werkdruk is hoog print dan Hard werken maar veel geld!.nnAls het salaris tussen de 40.000 en 100.000 is en de werkdruk is laag print dan Goed salaris voor het werk dat je doet!.nnAls het salaris tussen de 40.000 en 100.000 is en de werkdruk is hoog print dan Hard werken maar zeker een prima salaris!.nnAls het salaris onder de 40.000 is en de werkdruk is hoog print dan Hard werken en niet erg veel salaris helaas....nnAls het salaris onder de 40.000 is en de werkdruk is laag print dan Niet heel veel salaris, misschien wat harder gaan werken?',2
+waarom werkt deze code niet x = 5 y = 10 z = "4" print(x + y + z),3
+waarom werkt dit niet getal1 = 10 getal2 = input("Geef een getal:")  totaal1 = getal1 + getal2  print(str(getal1) + " plus " + str(getal2) + " = "),3
+print("Een rechthoek met de breedte " + str(breedte) + " en een lengte van " + str(lengte) + " heeft een oppervlakte van " + str(oppervlakte) ".")  whats wrong with this code?,3
+wat is er fout: print(Ben ik nog steeds aan het programmeren?),3
+'Wat zou de output nu zijn bij print("hallo, " + voornaam)',3
+How do I use the print function if I want to say Hello World in the console,3
+'Opdracht 1 - MoodnnVraag de gebruiker om 2 inputs:nnSalaris (getal)nnWerkdruk (hoog, laag)nnAls het salaris boven de 100.000 is en de werkdruk is laag print dan Wat een baan!.nnAls het salaris boven de 100.000 is en de werkdruk is hoog print dan Hard werken maar veel geld!.nnAls het salaris tussen de 40.000 en 100.000 is en de werkdruk is laag print dan Goed salaris voor het werk dat je doet!.nnAls het salaris tussen de 40.000 en 100.000 is en de werkdruk is hoog print dan Hard werken maar zeker een prima salaris!.nnAls het salaris onder de 40.000 is en de werkdruk is hoog print dan Hard werken en niet erg veel salaris helaas....nnAls het salaris onder de 40.000 is en de werkdruk is laag print dan Niet heel veel salaris, misschien wat harder gaan werken?.',3
+'Opdracht 2 - StroomrekeningnnVraag om 1 input:nnGebruikte stroom in kiloWatt (getal)nnWe gaan de totale stroomprijs uitrekenen en printen, dit doen we als volgt:nnEerste 100 kiloWatt --> gratisnnTweede 100 kiloWatt (van 100 t/m 200) --> 5 euro per kiloWattnnDe rest --> 10 euro per kiloWattnnVoorbeeld:nn350 kiloWattnnEerste 100 --> 0 Tweede 100 --> 100 * 5 = 500 Rest (150) --> 150 * 10 = 1500nnDus kosten: 2000 euro',3
+zonder min() en max(),3
+'Opdracht 3 - Loop LoopnnVoer de volgende 2 stappen uit, het is verplicht om voor allebei een aparte while loop te gebruiken:nnStap 1nnPrint de getallen van 10 tot en met 1, begin bij 10 en eindig bij 1nnStap 2nnPrint de eerste 5 machten van 3, dus 3, 9, 27, 81, 243nnJe programma print dus:nn10nn9nn8nn7nn6nn5nn4nn3nn2nn1nn3nn9nn27nn81nn243',3
+Opdracht 4 - Woord printennnVraag de gebruiker om 2 inputs:nnEen woordnnEen getalnnPrint dit woord net zo vaak als het gegeven getal. Doe dit met behulp van een loop!nnDus:nnwoord: Informaticanngetal: 4nnInformaticannInformaticannInformaticannInformatica,3
+is een for loop ook mogelijk?,3
+'Opdracht 5 - Lijst BewerkennnGegeven is een lijst met drie steden:nnsteden = ["Amsterdam", "Rotterdam", "Utrecht"]nnVoer de volgende stappen uit:nnVraag de gebruiker om een stad toe te voegen aan de lijst en voeg deze toe met behulp van append().nnVervang de tweede stad in de lijst door een stad die de gebruiker invoert.nnVraag de gebruiker om een getal tussen 0 en het aantal steden min 1, en print de stad op die positie.nnVerwijder de eerste stad uit de lijst en print de nieuwe lijst.nnPrint de totale aantal steden in de lijst met behulp van len().',3
+waarom werkt deze code niet breedte = int(input("Kies de breedte"))nnhoogte = int(input("Nu de hoogte"))nnprint(f"{breedte} * "#""),3
+hoef ik verder niks aan te passen?,3
+elif getal = < 0: wat is hier fout aan,3
+'wat is er fout: name = input("Wat is uw naam?")nnleeftijd = int(input("Wat is je leeftijd?"))nnprint(f"Hallo {name}, over 10 jaar ben je {10 + name} jaar oud!")',3
+'wat doei k fout hij crashed: import randomnnrandom_getal = random.randint(1, 100)nnuser_gok = int(input("Gok het getal: "))nnwhile random_getal != user_gok:nn    print("Dit is incorrect probeer het opnieuw: ")nnelse:nn    print("Je hebt goed gegokt")',3
+'hij crashed nu wat moet ik doen om dat de voorkomen: import randomnnrandom_getal = random.randint(1, 100)nnuser_gok = int(input("Gok het getal: "))nnwhile random_getal != user_gok:nn    print("Dit is incorrect probeer het opnieuw: ")nnprint("Je hebt goed gegokt")',3
+'zijn de comments correct: zin = ["Deze", "woorden", "zitten", "allemaal", "in", "een"]nnprint(zin) #hij print Deze woorden zitten allemaal in eennnprint(zin[1]) #hij print woordennnzin[1] = "strings" # woorden wordt stringsnnzin[5] = "lijst" #een wordt lijstnnprint(zin[3]) #print allemaalnnprint(zin[0] + " " + zin[3]) # hij print deze allemaalnnprint(zin) #hij print deze string zitten allemaal in lijst',3
+op welke andere manieren kun je dit doen: counter =+ 1,3
+wat doe ik fout: getallen = []nncounter = 0nnwhile counter <= 10:nn    getallen.append(counter)nn    counter = counter + 1nnprint("klaar"),3
+hoe kan je een timer maken dat de user een string kan invoegen ik wil een timer van 1 minuut,3
+how do i run the file,3
+'score = 0nnquestions = ["-", ".", "+"]nnanswers = ["-", ".", "+"]nnround = 0nnmaxRound = questions.lengthnnfor i in maxRound:nn    userAns = (question[round])nn    if userAns == answers[round]:nn        score+1nn    round+1nnwhy doesnt .length work on a py array?',3
+'waarom werkt deze code niet? als ik 5 zeg bij de eerste input en daarna ja geeft het programma een name errornngok = int(input("Kies een random getal tussen de 1 en de 10: "))nnif gok < 5:nn    print("Je hebt onder de 5 gegokt!")nnif gok> 5:nn    print("je hebt boven de 5 gegokt!")nnif gok == 5:nn    print("je hebt 5 gegokt")nnVraag1 = input("ja of nee?")nnif Vraag1 == ja:nn    print("gefeliciteerd, u wint 10.000 euro!")nnelse:nn    print("Helaas,u bent zojuist 10.000 euro misgelopen...")',3
+hij print bij de laatste if print steeds {getal1} en {getal2} inplaats van het getal dat de gebruiker in heeft gevoert,3
+'mijn code blijft aangeven dat het wachtwoord verkeerd is, ook al is het het goede wachtwoord.nnX = "Mauro1403"nninput("wachtwoord")nnif X == "wachtwoord":nn    print("Correct wachtwoord, je bent ingelogt!")nnif "wachtwoord" != X:nn    print("Incorrect wachtwoord, probeer het opnieuw!")',3
+'waaro,m zegt hij de getallen inplaats van het eindantwoord van de som? getal1 = ("3")nngetal2 = ("4")nngetal3 = ("6")nngetal4 = ("8")nngetal5 = ("4")nnprint(f"{getal1}*({getal2} + {getal3}) / ({getal4} + {getal5})")',3
+is er een manier hoe je kan checken of getal1 groter is dan getal2 en 3 met maar 1 if comment,3
+#vragen naar getalennngetal1 = int(input("vul een getal in"))nngetal2 = int(input("vul een 2e getal in"))nngetal3 = int(input("vul een 3e getal in"))nn#checken welke grootste isnnif getal1>= getal2 and getal1 >= getal3:nn    print(f"{getal1} is het grootst")nn    nnelif getal2 >= getal1 and getal2 >= getal3:nn     print(f"{getal3} is het grootst")nn    nnelif getal3 >= getal1 and getal3 >= getal2:nn     print(f"{getal3} is het grootst")nnwaarom werk deze code soms niet,3
+waarom werkt mijn code niet wachtwoord = Mauro1403nncounter = 0nninput("wat is je wachtwoord")nnwhile input != wachtwoord:nn    input("wat is het wachtwoord")nn    counter += 1,3
+wat gebeurt hier? getal3 = int(getal2)nn#nnprint(f"Getal 1 is: {getal1}")nn#nnprint(f"Getal 2 plus getal 3 is: {getal2 + str(getal3)}"),3
+'geeft de output voor deze code: gok = int(input("Kies een random getal tussen de 1 en de 10: "))nnif gok < 5:nn    print("Je hebt onder de 5 gegokt!")nnif gok > 5:nn    print("Je hebt boven de 5 gegokt!")nnif gok == 5:nn    print("Je hebt 5 gegokt")nnwin = 5nnwin1 = if win == gok:nn    int(input("Kies: Ja of nee, "))nn    if win1 == ja: nn        print("Gefeliciteerd, u wint 10.000 euro")nn    if win1 == nee: nn        print("Helaas, u bent zojuist 10.000 euro misgelopen...")',3
+wat doe ik hier fou? print(f"{hoogte * #}{breedte * #} "),3
+tafel = 6nncounter = 1nnwhile counter < 11:nn    print(tafel * counter)nn    counter = counter + 1 wat gaat hier fout?,3
+stroom = int(input("Wat is de gebruikte stroom in kiloWatt?"))nnstroom1 = print(f"De eerste {stroom + 100 - stroom} kiloWatt is gratis.")nnstroom2 = (f"{(stroom + 100 - stroom) * 5} ")nnprint(f"De tweede 100 kiloWatt is {stroom2}")nnstroom3 = (f"{(stroom - 200) * 10}")nnprint(f"De rest van de kiloWatt ({stroom - 200}) kost nog {(stroom - 200) * 10} euro")nnstroom_totaal = (f"{stroom2 + stroom3}")nnprint(f"Uw kosten zijn dus {stroom_totaal}")  bij de laatste regel print de code niet het eindgetal bij elkaar opgeteld,3
+'print("Hallo " + Naam + " , over 10 jaar ben je" + [Leeftijd + 10] + " jaar oud!" )   : wat is hier fout?',3
+'Antwoord1 = janngok = int(input("Kies een random getal tussen de 1 en de 10: "))nnif gok < 5:nn    print("Je hebt onder de 5 gegokt!")nnif gok > 5:nn    print("Je hebt te hoog gegokt!")nnif gok == 5:nn    print("Dat is goed!")nngok1 = input("Ja of Nee?")nnif gok1 == Antwoord1:nn    print("Gefeliciteerd, u wint 10.000 euro")nnif gok1 != Antwoord1:nn    print("Helaas, u bent zojuist 10.000 euro misgelopen...")     : wat is hier fout',3
+'import randomnnimport timennwapens = ["slipper", "boog", "knuppel", "zwaard", "pistool"] nnprint("Er komt een zombie aan! Kies je wapen!")nnk1 = int(input("Kies 1 als je uit de lijst wil kiezen, en 2 voor een nieuw wapen"))nn    nnwhile True:nn    if k1 == 1:nn        b1 = random.choice(wapens)nn        zwakte = [b1]nn        print(wapens)nn        k2 = input("Welk wapen wil je kiezen")nn   nn        while True:nn            if k2 != zwakte:nn                print("Je hebt de zombie verslagen!")nn                breaknn            elif k2 == zwakte:nn                print("De zombie kan daar tegen!")nn                k2 = input("Welk wapen wil je kiezen")nn    elif k1 == 2:nn        w = input("Welk wapen wil je toevoegen?")nn        wapens.append(w)nn        b1 = random.choice(wapens)nn        zwakte = [b1]nn        print(wapens)nn        k2 = input("Welk wapen wil je kiezen")nn        nn        while True:nn            if k2 != zwakte:nn                print("Je hebt de zombie verslagen!")nn                breaknn            elif k2 == zwakte:nn                print("De zombie kan daar tegen!")nn                k2 = input("Welk wapen wil je kiezen")nn    print("")nn    v1 = input("Wil je door gaan?")nn    if v1 == "Ja"or "ja":nn        print("")nn        print("Er komt een zombie aan! Kies je wapen!")nn        k1 = int(input("Kies 1 als je uit de lijst wil kiezen, en 2 voor een nieuw wapen"))nn    else:nn        breaknn    nnprint("Oké")nn    hoe stop je de hele code na "wil je door gaan?" = nee',3
+'waarom doet deze code het niet wachtwoord = ("Hallo1234")nncounter = 0nnpersoon = input("wat denk je dat het wachtwoord is")nnwhile (wachtwoord) != (persoon):nn    print ("fout, probeer het opnieuw")nninput("probeer het opnieuw")nncounter =+ 1 nn    nnelse:nn    print("gefeliciteerd je hebt het geraden")nnprint (counter)',3
+'waarom geeft hij errors = int(input("Wat is je salaris?"))nnwel = input("zou jij je werkdruk hoog of laag beschouwen?")nnif s > 100000 and wel == (laag):nn    print("Wat een baan!")nnelif s > 100000 and wel == (hoog):nn    print("hard werken maar veel geld!")nnelif s  < 100000 and s >= 40000 and wel == (laag):nn    print("goed salaris voor het werk dat je doet!")nnelif s  > 100000 and s >= 40000 and wel == (hoog):nn    print("hard werken maar zeker een prima salaris!")nnelif s < 40000 and wel == (hoog):nn    print("Hard werken en niet veel salaris helaas...")nnelif s < 40000 and wel == (laag):nn    print("niet heel veel salaris, misschien wat harder gaan werken?")nnelse:nn    print("voer echt hoog of laag in")',3
+wat is er fout aan deze codennif getal >= 1 and getal <= 5:nn    print("goedzo")nnelif ("getal <= 1 and >= 5")nn    print("dit klopt niet"),3
+wat klopt hier niet aan if getal >= 1 and getal <= 5:nn    print("goedzo")nnelif getal <= 1 and >= 5:nn    print("dit klopt niet"),3
+wat klopt hier niet aannngetal = int(input("vul een getal in: "))nnif getal >= 1 and getal <= 5:nn    print("goedzo")nnelif getal < 1 or getal > 5:nn    print("dit klopt niet")nnelse: nn    print("vul een getal in"),3
+'waarom werkt deze code nietnngames = ["Minecraft", "Rust", "GTA V", "Hayday", "Clash of clans"]nngames.append ("super mario bros")nnprint (games) nnprint(games[int(input("noem een getal van 0 tot en met 5"))])nnprint(int(input("noem een game")))nnif game in games:nn    games.remove("game")nnelse:nn    games.append("game")nnprint(games)',3
+'waarom werkt deze code niet  Opdracht 2 - Lijst Bewerkennngames = ["Minecraft", "Rust", "GTA V", "Hayday", "Clash of Clans"]nngames.append("Super Mario Bros")nnprint(games) nnprint(games[int(input("noem een getal van 0 tot 6"))])nngame=input("noem een game:")nnif game in games:nn    games.remove(game)nnelse:nn    games.append(game)nnprint(games)',3
+wat is hier fout aan lengte=input("wat is de lengte")nnbreedte=input("wat is de breedte")nnoppervlakte= lengte*breedtennprint ("oppervlakte in een zin"),3
+getal1 = int(input("vul een getal in"))nngetal2 = int(input("vul een getal in"))nngetal3 = int(input("vul een getal in"))nn    if getal1 >=1 and getal1 <=100:nn        print("wat ene mooi getal")nn                 WAT IS HIER FOUT AAN,3
+Gegeven is een lege lijst.shnnVoeg met behulp van een while loop de getallen 1 tot en met 10 aan deze lijst toe!nnPrint hierna de lijst met getallen. wat moet er beter getallen = []nni = 1nnWhile i <= 10:nn    print(i)nn    getallen.append(i)nn    i += 1nnprint (getallen),3
+'whatis wrong with this code: naam = int(input("wat is je naam?"))nnleeftijd = int(input("hoe oud ben je?"))nnprint("Hallo {naam}, over 10 jaar ben je {leeftijd + 10}!")',3
+'what is wrong with this code:nnwachtwoord = input("wat is het wachtwoord")nnif wachtwoord > 1234:nn    print("incorrect wachtwoord, probeer het opnieuw!")nnif wachtwoord < 1234:nn    print("incorrect wachtwoord, probeer het opnieuw!")nnif wachtwoord == 1234:nn    print("correct wachtwoord, je bent ingelogd!")',3
+how do i fix this?nn temp = int(input("hoe warm is het"))nnmeetstelsel = str(input("is dit in Celsius of in Fahrenheit"))nnCelsius = str(print(temp * 1.8 + 32))nnFahrenheit = str(print((temp - 32)*0.5556))nnif meetstelsel == Celsius:nn    print("Dat is: "(temp - 32* o.5556) print(" in graden Fahrenheit"),3
+why is my code not workingnngetal1 = int(input("noem een getal"))nngetal2 = int(input("noem nog een getal"))nngetal3 = int(input("noem nog een getal"))nnif getal1 > getal2 and getal3:nn    print(getal1)nnelif getal2 > getal1 and getal3:nn    print(getal2)nnelse:nn    print(getal3),3
+what is wrong with this codenngetal1 = int(input("noem een getal")nnwhile getal1 >= 1 or getal1 <= 20 nn    print(getal1)nn    getal = int(input("noem een getal"),3
+what is wrong with this code?: getal1 = int(input("noem een getal")nnwhile getal1 >= 1 or getal1 <= 20 nn    print(getal1)nn    getal = int(input("noem een getal"),3
+getallen = ["0"]nnattempts = 0nnwhile "10" not in getallen:nn    print(getallen)nn    attempts = attempts + 1nn    getallen.append(attempts + 1)nnwhats wrpng in this code?,3
+'games = ["Minecraft", "Rust", "GTA V", "Hayday", "Clash of clans"]nnif [gameuser] in games:nn    games.remove(["gameuser"])nn    print(games)nnwhats wrong',3
+'ik krijg deze fout:   Cell In[2], line 1     naam = "Thom" print("Hallo", naam)                   ^ SyntaxError: invalid syntax',4
+it doesnt give me the custom error when i type a letter in can you fix that,4
+'can you now make it so the error will change depending on what you type in de input function so if I type "Hello" it will say something like "Hello" is not a number, please try again',4
+can you now make it that if I type a word or a sentence and the first character isnt a special letter it will make only the first letter of the first word a capital letter,4
+It still wont capitalize the first letter of the first word i type when there is the first letter isnt a special letter,4
+'can you also make it so it will correct the rest of the grammar when its types a sentence or a word, to make the grammar correct in the language its typed in, so add punctuation and missing letters, and if the program needs to correct grammar can you change the out put to "you typed that wrong here is {the correct grammar}, will you please try again and typ a number this time"',4
+'it wont correct the grammar is there any way to fix that, for example when i type "Helo how is it gong with you toda" I want the program to check for grammar mistakes and then fix them to the correct grammar thats the following "Hello how is it going with you today"',4
+can you make it so its written in python,4
+Add a score,4
+how can you make rock paper scissors?,4
+Schrijf een programma dat vraagt om een getal tussen de 1 en 5.,4
+Maak nu een programma dat om 3 getallen met inputs vraagt.,4
+gebruik elif,4
+wat verander ik als ik hetzelfde moet doen maar dan ben een driehoek,4
+er zitten allemaal errors in verbeter zonder errors,4
+'Regel 4 zorgt voor een error als je de code runt. Fix deze errornnZorg dat totaal1 ook geprint wordt aan het einde van het programmannMaak een nieuwe variabele, vermenigvuldig getal1 en getal2 en zet het resultaat hiervan in deze variabelennPrint getal1, getal2 en de nieuwe variabele op een nieuwe regel eronder',4
+verbeter: lengte = float(input("Wat is de lengte van het rechthoek: "))nnbreedte = float(input("Wat is de breedte van het rechthoek: "))nnoppervlakte = lengte * breedtennprint("De oppervlakte van het rechthoek is" oppervlakte),4
+doe het met if en elif,4
+kan je dit kloppend maken?nnprint("#") print(4 * " ") print("#"),4
+maak het zodat er na "*foutmelding*" en regel over wordt geslagen en dan de rest van de tekst komt.   print("*foutmelding* je kennie lezen"),4
+prijs = int(input("Wat is de prijs van het eten? €"))nnfooi = float(input("Hoeveel procent fooi wilt u geven? "))nnprint(f"Dan wordt het {prijs} plus {fooi} % fooi is" + prijs + prijs* fooi +".") fix dit a.u.b.,4
+ik moet een rechthoek tekenen met "#",4
+gebruik een while loop,4
+herschrijf de code zodat hij tot 10 telt,4
+'wachtwoord1 = HoinnWachtwoord2 = int(input("Wat is het wachtwoord?"))nnif Wachtwoord1 == Wachtwoord2:nn    print("Correct wachtwoord, je bent ingelogd!")nnif wachtwoord1 != Wachtwoord2:nn    print("Incorrect wachtwoord, probeer het opnieuw")  : fix dit',4
+temperatuur1 = int(input("Wat is de waarde van de temperatuur?"))nnzes = input("Is het in Fahrenheit of Celsius?")nnif zes == "Celsius":nn    print((temperatuur1 - 32) * 0.5556)nnif zes == "celsius":nn    print((temperatuur1 - 32) * 0.5556 + "Fahrenheit")nn: Fix dit,4
+schrijf een code van dat je vragen in de input kunt zetten,4
+'verbeternnimport randomnnrandom_getal = random.randint(1, 100)nncounter = 1nnuser_gok = input("wat denk je dat het getal is?")nnwhile (random_getal) != (user_gok):nn    print ("fout, probeer het opnieuw")nn    if random_getal > user_gok:nn        print ("het getal is groter")nn    elif random_getal < user_gok:nn        print("het getal is kleiner")nn    user_gok = input("Wat is het getal?")nn    counter += 1 nn    nnelse:nn    print("gefeliciteerd je hebt het geraden")nnprint (f"je hebt het gehaald in {counter} pogingen")',4
+hoe maak je een vierkant die er zo uit ziet ########nn########nn########nn########nn########,4
+'wat moet ik veranderen om deze error te verwijderen: TypeError                                 Traceback (most recent call last)nnCell In[30], line 3nn      1 wachtwoord = "HOI123"nn----> 3 ingevoerd_wachtwoord = input("Voer uw wachtwoord in: ")nn      5 if ingevoerd_wachtwoord == wachtwoord:nn      6     print("Correct wachtwoord, je bent ingelogd!")nnTypeError: "str" object is not callable',4
+Maak een code voor een brawl stars stardrop simulator,4
+Kan je de code nog geavanceerd gebruiken,4
+Maak hem nog geavanceerder,4
+'--------------------------------------------------------------------------nnValueError                                Traceback (most recent call last)nnCell In[9], line 52nn     50 # Simuleer meerdere dropsnn     51 for _ in range(10):nn---> 52     star_drop_simulator()nnCell In[9], line 36, in star_drop_simulator()nn     34 # Genereer een willekeurig sterrenniveau op basis van de dropkansennn     35 if huidig_evenement:nn---> 36     ster_niveau = random.choices(sterren, weights=huidig_evenement["drop_kansen"].values())[0]nn     37 else:nn     38     ster_niveau = random.choices(sterren, weights=drop_kansen.values())[0]nnFile /opt/conda/lib/python3.11/random.py:506, in Random.choices(self, population, weights, cum_weights, k)nn    504     raise TypeError("Cannot specify both weights and cumulative weights")nn    505 if len(cum_weights) != n:nn--> 506     raise ValueError("The number of weights does not match the population")nn    507 total = cum_weights[-1] + 0.0   # convert to floatnn    508 if total <= 0.0:nnValueError: The number of weights does not match the populationnnfix deze error',4
+maak een code voor een super geavanceerde clicker simulator,4
+'wat moet er beter aan Pas het volgende programma zo aan dat de getallen van de tafel van 6 naar de console worden geprint. In plaats van "Hier moet de tafel komen" komt er dus 6, 12, 18, enz.nn tafel = 6nncounter = 1nnwhile counter < 11:nn    print("Hier moet de tafel komen")nn    counter = counter + 1',4
+'how do i make a code that sets fahrenheit to celsius if i have the formulas''',4
+'hoe maak ik een if/elif code die vraagt om een getal en dan zegt of deze even, oneven of nul is',4
+how about u do it again using a while loop,4
+and also without the def and functions,4
+'namen = ["Max", "Lisa", "Joost", "Merel"]nnprint("Kies een getal.")nnprint("1. Laat alle namen zien")nnprint("2. Voeg een naam toe")nnprint("3. Kies een naam uit de lijst")nnprint("4. Afsluiten")nngetal = int(input("Kies een getal."))nngetal1 = print("Max, Lisa, Joost, Merel")nngetal2 = namen.append(int(input("Voer een naam in.")))nngetal3 = nnif getal == 1:nn    print(getal1)nnif getal == 2:nn    print(getal2)nnzorg dat dit programma werkt.',4
+Hoe maak ik opdracht 4 af?,4
+'Print de getallen van 10 tot en met 1, begin bij 10 en eindig bij 1',4
+wat betekend deze error? TypeError: unsupported operand type(s) for +: "int" and "str",5
+TypeError: can only concatenate str (not "int") to str  what does this error mean?,5
+wat betekent deze error? TypeError: unsupported operand type(s) for +: "int" and "str",5
+wat betekent deze error? TypeError: can only concatenate str (not "int") to str,5
+wat betekent deze error: TypeError: unsupported operand type(s) for +: "int" and "str",5
+wat betekent de error TypeError: unsupported operand type(s) for +: "int" and "str",5
+wat betekent de error TypeError: unsupported operand type(s) for +: "int" and "str",5
+'what does th error message mean ? --------------------------------------------------------------------------- TypeError                                 Traceback (most recent call last) Cell In[1], line 4       2 y = 10       3 z = "4" ----> 4 print(x + y + z)  TypeError: unsupported operand type(s) for +: "int" and "str"',5
+'--------------------------------------------------------------------------- ValueError                                Traceback (most recent call last) Cell In[10], line 2       1 # ----> 2 getal_of_string = int("hoi")       4 #       5 type(getal_of_string)  ValueError: invalid literal for int() with base 10: "hoi" wat is de error hier?',5
+'Cell In[10], line 1     print(Ben ik nog steeds aan het programmeren?)           ^ SyntaxError: invalid syntax. Perhaps you forgot a comma? wat betekent deze error',5
+en wat betekent de error,5
+'wat betekent deze error:   Cell In[5], line 1     print(Ben ik nog steeds aan het programmeren?)           ^ SyntaxError: invalid syntax. Perhaps you forgot a comma?',5
+hoe kan ik de error fixen,5
+leg uit hoe de fout werkt en hoe ik het moet verbeteren,5
+wat staat er bij de error en wat betekend dit,5
+wat betekend de error TypeError: unsupported operand type(s) for +: "int" and "str",5
+TypeError: unsupported operand type(s) for +: "int" and "str" what does this mean,5
+wat betekent TypeError: can only concatenate str (not "int") to str,5
+wat betekent deze error "SyntaxError: invalid syntax. Perhaps you forgot a comma?"?,5
+what does typerror mean?,5
+elif getal >=1 or <=5:nn                      ^nnSyntaxError: invalid syntax. Waaro geeft hij een error aan?,5
+elif cijfer >= 1 or <= 10:nn                        ^nnSyntaxError: invalid syntax. Waarom is dit een error,5
+'Cell In[15], line 3nn    while > 5:nn          ^nnSyntaxError: invalid syntax. waarom is dit een error',5
+'wat betekent deze error nn---------------------------------------------------------------------------nnTypeError                                 Traceback (most recent call last)nnCell In[1], line 4nn      2 y = 10nn      3 z = "4"nn----> 4 print(x + y + z)nnTypeError: unsupported operand type(s) for +: "int" and "str"',5
+'waarom werkt het niet?nn---------------------------------------------------------------------------nnTypeError                                 Traceback (most recent call last)nnCell In[1], line 4nn      2 y = 10nn      3 z = "4"nn----> 4 print(x + y + z)nnTypeError: unsupported operand type(s) for +: "int" and "str"',5
+'---------------------------------------------------------------------------nnTypeError                                 Traceback (most recent call last)nnCell In[22], line 4nn      1 lengte = input("voer een lengte in van een rechthoek")nn      2 breete = input("voer een breete in van een rechthoek")nn----> 4 print(f"het oppervlackte van jouw rechthoek is {lengte*breete}")nnTypeError: can"t multiply sequence by non-int of type "str" what does this error mean?',5
+'Cell In[10], line 9nn    else getal2 <= getal3 >= getal2:nn         ^nnSyntaxError: expected ":"nn waarom werkt hij niet',5
+'wat moet ik doen om deze error te verwijderen TypeError                                 Traceback (most recent call last)nnCell In[32], line 3nn      1 wachtwoord = "HOI123"nn----> 3 wachtwoord2 = input("Voer uw wachtwoord in: ")nn      5 if wachtwoord2 == wachtwoord:nn      6     print("Correct wachtwoord, je bent ingelogd!")nnTypeError: "str" object is not callable',5
+'Cell In[9], line 8nn    elif grade >= 5.5 and < 8:nn                          ^nnSyntaxError: invalid syntaxnnWhats wrong here?',5
+Wat is deze error?,5
+'Cell In[3], line 7nn    else getal1 < 0:nn         ^nnSyntaxError: expected ":" Wat is deze error?',5
+'Cell In[21], line 24nn    print(f"Je hebt gekozen voor: {namen[keuze-1]}")nn                                                    ^nnIndentationError: expected an indented block after "if" statement on line 22 Wat is deze error?',5
+geef me inputs voor de lengte en breedte van de rechthoek,6
+wat is de omtrek van een rechthoek met de lengte = 5 en de breedte = 5,6
+inpts voor de lengte en de omtrek van een rechthoek,6
+I would like a challenging exersize for beginner programmers,6
+I already have made something quite simmilar to this.. Do you have any other excersizes?,6
+Cn you help me make a quiz?,6
+Can you give me a topic for a quiz,6
+Can you (properly) translate the question to Dutch,6
+think of more questions,6
+now give the questions without the programming,6
+Give me the answers,6
+maak een paar opdrachten zodat ik de while loop beter begrijp,6
+add some questions and answers",6
+'add some questions about javascript, typescript and its frameworks. add 5 questions.',6
+kan je e code maken?,6
+hoe kan ik een code runen?,6
+heb jij nog leuke opdrachten om te oefenen met het maken van lijsten?,6
+hoe doe ik de stelling van pytagoras,6
+noem de straal van een willekeurige cirkel,6
+kan je een oefen opdracht geven gebaseerd op all mijn notebooks,6
+'kijk opdracht 1 tot en met 5 na, en kijk of de code werkt, ik hoef geen verbteringen te weten zolang de code werkt',6
+kan je mijn opdrachten van "oefentoets.ipynb"" nakijken,6
+'"score = 0nnquestions = ["-", ".", "+"]nnanswers = ["-", ".", "+"]nnfor i, question in enumerate(questions):nnuser_ans = input(f"What is {question}? ")nnif user_ans == answers[i]:nnscore += 1nnprint("Your final score is:", str(score) + "/" + str(len(answers)))nnadd some questions and answers"',6
+leeftijd = input("Wat is je leeftijd?")n int (Leeftijd) print(leeftijd + 10),7
+getal1 = 25 getal2 = 4 getal3 = int(input("Vul een getal in:")) totaal1 = getal1 * getal2 totaal2 = getal3 + getal2 totaal3 = totaal1 - totaal2,7
+'print("hallo, ik ben", naam',7
+'TypeError Traceback (most recent call last) Cell In[8], line 4 2 y = 10 3 z = "4" ----> 4 print(x + y + z) TypeError: unsupported operand type(s) for +: "int" and "str"',7
+print("hoe heet je"),7
+'"Cell In[9], line 1 Hoe heet je? name = input("Hoe heet je? ")^SyntaxError: invalid syntax"',7
+'"Naam = input("Wat is je naam?") leeftijd = int(input("Hoe oud ben je?")) print("Hallo"[naam]", over 10 jaar ben je "[leeftijd + 10]" jaar oud")',7
+'"Vragen-Antoowrden = ["vragen"("wat is mijn lievelings kleur?")"opties"("Blauw, Groen, Rood, Geel")"antwoord"("Rood")]"',7
+getal1 = int(input("wat is getal 1? "))nngetal2 = int(input("wat is getal 2? "))nngetal3 = int(input("wat is getal 3? "))nnif getal1 > getal2 and getal1 > getal3:nn    print(f"het grootste getal is {getal1}")nnelif getal2 > getal1 and getal2 > getal3:nn    print(f"het grootste getal is {getal2}")nnelif getal3 > getal1 and getal3 > getal2:nn    print(f"het grootste getal is {getal3}")nnelif getal1 == getal2 and getal1 != getal3:nn    print(f"het grootste getal is {getal1}")nnelif getal1 == getal2 and getal1 == getal3:nn    print(f"het grootste getal is {getal1}")nnelif getal1 != getal2 and getal2 == getal3:nn    print(f"het grootste getal is {getal2}")nnelif getal1 > getal2 and getal1 == getal3:nn    print(f"het grootste getal is {getal1}"),7
+'gok = input("Wat is het wachtwoord?")nnif gok != "123qwert": nn    print("Incorrect wachtwoord, probeer het opnieuw!")nnif gok == wachtwoord:nn    print("Correct wachtwoord, je bent ingelogd!")',7
+'import randomnnrandom_getal = random.randint(1, 100)nngok = int(input("Welk getal tussen de 1 en 100 heb ik nu in mijn hoofd?"))nnwhile gok > random_getal:nn    n    if gok < random_getal:nn        print("te laag")nn        gok = int(input("Welk getal tussen de 1 en 100 heb ik nu in mijn hoofd?"))nn    if gok == random_getal:nn        print("Goed!")',7
+'import randomnncounter = 1nnrandom_getal = random.randint(1, 100)nngok = int(input("Welk getal tussen de 1 en 100 heb ik nu in mijn hoofd?"))nnwhile gok != random_getal:nn    if gok < random_getal:nn        print("te laag")nn    elif gok > random_getal:nn        print("te hoog")nn        counter += 1nn    gok = int(input("Welk getal tussen de 1 en 100 heb ik nu in mijn hoofd?"))nnprint("Goed!")nnprint(f"het kostte je {counter} kansen")',7
+'import randomnnrandom_getal = random.randint(1, 100)nncounter = 0nngok = int(input("Welk getal tussen de 1 en 100 heb ik nu in mijn hoofd?"))nnwhile gok != random_getal:nn    counter += 1nn    if gok < random_getal:nn        print("te laag")nn    n    elif gok > random_getal:nn        print("te hoog")nn    else:nn        print("Goed!")nnprint(f"het kostte je {counter} kansen")',7
+'games = ["Minecraft", "Rust", "GTA V", "Hayday", "Clash of clans"]nngames.append("Super Mario Bros")nngetal = int(input("geef en getal tussen de 0 en 5: "))nnprint(games [getal])nnvraag = input("welke game speel jij graag? ")nnif vraag in games:nn    games.remove(vraag)nnelse:nn    games.append(vraag)',7
+getallen = []nncounter = 0nnwhile (getallen) <= 10:nn    counter += 1nn    print(getallen),7
+getallen = []nncounter = 0nnwhile (counter) <= 10:nn    getal = 1nn    getallen.append(getal)nn    counter = counter + 1nn    print(getallen),7
+for i in range(len(vragen)):nn    antwoord = input(vragen[i] + " ")nn    if antwoord.lower() == antwoorden[i].lower():nn        score += 1nn        print("goedzo")nn    else:nn        print("fout"),7
+hoogte = input("wat is de hoogte?")nnbreedte = input("wat is de hoogte?")nnif hoogte == breedte:nn    print("het is een vierkant")nnelse:nn    print("het is een rechthoek")nnoppervlakte = hoogte * breedte nnprint ("oppervlakte"),7
+getallen = []nni = 1nnWhile i <= 10:nn    print (i),7
+Hoi,8
+Test,8
+test test,8
+hoi,8
+hoi,8
+wat is fout aan deze code kgsbrajkmnocdjbhshuicwuiwe,8
+hoi hoe gaat het,8
+hoi,8
+"Vraag in de code cel hieronder om de naam van de gebruiker van je programma en probeer deze naam vervolgens te printen." ik snapo deze vraag niet,9
+hoe moet ik verder bij deze opdracht,9
