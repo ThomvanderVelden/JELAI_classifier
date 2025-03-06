@@ -33,7 +33,7 @@ from transformers import (
 )
 
 # Import components from the multi_classifier script
-from multi_classifier import (
+from classifier import (
     LABEL_MAP,
     CustomTrainer,
     QuestionDataset,
@@ -132,7 +132,7 @@ def objective(trial, train_df, val_df, class_weights_tensor):
         save_strategy="epoch",
         warmup_ratio=warmup_ratio,
         gradient_accumulation_steps=gradient_accumulation_steps,
-        report_to="none",  # Disable wandb, tensorboard reporting
+        report_to="none",  # Disable logging
         save_total_limit=1,  # Only keep the best model to save disk space
     )
 
@@ -338,10 +338,6 @@ def main():
 
     # Create visualizations
     visualize_optimization_history(study)
-
-    # Train a final model with the best parameters and save it
-    print("\nTraining final model with best hyperparameters...")
-    best_trial = study.best_trial
 
     # Report total time taken
     total_time = time.time() - start_time

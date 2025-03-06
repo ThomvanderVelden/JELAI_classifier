@@ -1,0 +1,9 @@
+=== Classification Evaluation Summary ===
+
+Total examples: 107
+
+Category Accuracy: 71.96%
+Merged Accuracy: 77.57%
+Type Accuracy: 82.24%
+
+See the HTML report for detailed analysis and visualizations.

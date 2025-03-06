@@ -9,7 +9,7 @@ Multi-Class Classification of Dutch Questions Using RobBERT and Transformers Tra
 6) Loads the model checkpoint to classify new questions without retraining.
 -----------------------------------------------------------------------------------
 NOTE: Make sure you have the necessary libraries installed:
-  pip install 'transformers[torch]' accelerate -U scikit-learn pandas
+  pip install -r requirements.txt
 """
 
 import os
@@ -33,16 +33,17 @@ from transformers import (
 DO_TRAIN = (
     False  # <--- Toggle. If True: train model. If False: load from existing checkpoint.
 )
-CHECKPOINT_DIR = "my_saved_model"
-DATA_PATH = (
-    "/Users/thomvandervelden/dev/JELAI_classifier/data/questions_before_midterm.csv"
-)
-INFERENCE_FILE = (
-    "/Users/thomvandervelden/dev/JELAI_classifier/data/questions_after_midterm.csv"
-)
+CHECKPOINT_DIR = "saved_model"
+DATA_PATH = "data/questions_before_midterm.csv"
 
-# Output file to write predictions
-OUTPUT_FILE = "/Users/thomvandervelden/dev/JELAI_classifier/predictions.txt"
+# --------------------------------------------------------
+# Decide on which device to train (CPU, MPS on Apple Silicon, or CUDA for NVIDIA GPUs)
+# --------------------------------------------------------
+device = torch.device(
+    "mps"
+    if torch.backends.mps.is_available()
+    else "cuda" if torch.cuda.is_available() else "cpu"
+)
 
 # Mapping from numeric label to class name
 LABEL_MAP = {
@@ -60,16 +61,6 @@ LABEL_MAP = {
 
 
 # --------------------------------------------------------
-# Decide on which device to train (CPU, MPS on Apple Silicon, or CUDA for NVIDIA GPUs)
-# --------------------------------------------------------
-device = torch.device(
-    "mps"
-    if torch.backends.mps.is_available()
-    else "cuda" if torch.cuda.is_available() else "cpu"
-)
-
-
-# --------------------------------------------------------
 # 1. LOAD AND INSPECT THE DATA
 # --------------------------------------------------------
 def load_data(file_path):
@@ -81,20 +72,16 @@ def load_data(file_path):
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Data file not found at {file_path}")
     df = pd.read_csv(
-        "data/questions_before_midterm.csv",
+        file_path,
         sep=",",
         quotechar="'",
         escapechar="\\",
         engine="python",
     )
-    print("Available columns:", df.columns.tolist())
     return df
 
 
 df = load_data(DATA_PATH)
-
-print("\nLabel distribution:")
-print(df["label"].value_counts())
 
 
 # --------------------------------------------------------
@@ -103,6 +90,7 @@ print(df["label"].value_counts())
 train_df, val_df = train_test_split(
     df, test_size=0.2, random_state=42, stratify=df["label"]
 )
+
 
 # --------------------------------------------------------
 # 3. COMPUTE CLASS WEIGHTS
@@ -138,7 +126,7 @@ else:
 
 
 # --------------------------------------------------------
-# 4. ENCODE THE TEXT
+# 5. ENCODE THE TEXT
 # --------------------------------------------------------
 def encode_texts(texts, tokenizer, max_length=128):
     """
@@ -218,7 +206,6 @@ class CustomTrainer(Trainer):
         outputs = model(**inputs)
         logits = outputs.logits
 
-        # Weighted cross-entropy for multi-class (10 labels)
         # Use provided weights or default to the global class_weights_tensor
         weights = (
             self.class_weights_tensor
@@ -249,10 +236,7 @@ if DO_TRAIN:
     # Save the trained model & tokenizer
     trainer.save_model(CHECKPOINT_DIR)
     tokenizer.save_pretrained(CHECKPOINT_DIR)
-    print(f"\nModel + tokenizer saved to '{CHECKPOINT_DIR}'")
 else:
-    # Skip training/evaluation
-    print("\nSkipped training; model loaded from checkpoint.")
     # Optionally do a quick evaluation:
     trainer.evaluate()
 
@@ -306,42 +290,3 @@ print("\nTesting multiple questions after training/loading model:")
 for q in test_questions:
     print(f"\nQuestion: {q}")
     result = classify_question(q)
-
-
-# --------------------------------------------------------
-# 12. INFERENCE FROM A FILE, WRITE OUTPUT
-# --------------------------------------------------------
-# def classify_file(input_file_path: str, output_file_path: str):
-#     """
-#     Reads a file line-by-line (each line = one question).
-#     Classifies each line using the model and writes results to 'output_file_path'.
-#     """
-#     if not os.path.exists(input_file_path):
-#         print(f"[WARN] File '{input_file_path}' not found. Skipping.")
-#         return
-
-#     print(f"\n--- Classifying questions from file: {input_file_path} ---")
-#     print(f"Results will be written to: {output_file_path}")
-
-#     with open(input_file_path, "r", encoding="utf-8") as infile:
-#         lines = infile.read().splitlines()
-
-#     with open(output_file_path, "w", encoding="utf-8") as outfile:
-#         for i, line in enumerate(lines, start=1):
-#             line = line.strip()
-#             if not line:
-#                 continue
-
-#             pred_num = classify_question(line)
-#             pred_class_name = LABEL_MAP[pred_num]
-
-#             # Print to console (optional)
-#             print(f"{i}. {line} => {pred_class_name}")
-
-#             # Write to output file
-#             outfile.write(f"Line {i}: {line}\n")
-#             outfile.write(f" Predicted Class => {pred_class_name}\n\n")
-
-
-# # Finally, run inference on the file and write results
-# classify_file(INFERENCE_FILE, OUTPUT_FILE)

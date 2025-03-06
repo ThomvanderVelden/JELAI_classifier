@@ -1,0 +1,885 @@
+question,true_category,pred_category,true_type,pred_type,merged_true,merged_pred
+what das len do,Concept Comprehension,Chatbot interaction,instrumental,other,Code/Concept Comprehension,Chatbot interaction
+hoe moet ik getallen in een lijst vermenigvuldigen,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+waar staat de i voor in for loops,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+Hoe kan ik een grootste getal in een lijst laten zien zonder de functie MAX te gebruiken,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+en hoe het op een na grootste getal,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+en nu met een loop,Chatbot interaction,Chatbot interaction,other,other,Chatbot interaction,Chatbot interaction
+"l = [2, 6, 3, 10, 8]
+m = l[0]
+m1 = float
+for i in l:
+    if i > m:
+        m1 = m
+        m = i
+    elif i > m1 and i != m:
+        m1 = i
+print(m1)   Whats wrong here",Code Comprehension,Code Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+wat doet modulo,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+hoe tel je getallen uit een lijst bij elkaar op met gebruik van een loop?,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+maak een opdracht zoals dit,Task Related Delegation,Fix this code / error,instrumental,executive,Task Related Delegation,Fix this code / error
+what does .lower do?,Concept Comprehension,Chatbot interaction,instrumental,other,Code/Concept Comprehension,Chatbot interaction
+"Schrijf een programma dat elk getal groter dan 5 in een nieuwe lijst stopt en deze lijst returnt.
+Dus [6, 3, 9, 2, 1] wordt [6, 9].
+Dit moet bij elke lijst werken, ongeacht het aantal elementen in de lijst.",Copying Notebook Questions,Copying Notebook Questions,executive,executive,Copying Notebook Questions,Copying Notebook Questions
+hoe kun je getallen optellen met een loop,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+is dit een loop?,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+is met sum ook een loop,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"Schrijf een functie die alle getallen uit de lijst met elkaar vermenigvuldigt. Het moet met een loop!
+Voorbeeld: [5, 7, 2, 1] --> 70 (5 * 7 * 2 * 1)
+Dit moet bij elke lijst werken, ongeacht het aantal elementen in de lijst.",Copying Notebook Questions,Copying Notebook Questions,executive,executive,Copying Notebook Questions,Copying Notebook Questions
+doe dit met een for of while loop,Fix this code / error,Fix this code / error,executive,executive,Fix this code / error,Fix this code / error
+"hoe vraag ik de gebruiker om iets in een lijst toe te voegen met behulp van append()
+",Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+wat doet return en wanneer gebruik ik het,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"def rekenen1():
+    getal1 = 50
+    getal2 = 5
+    return getal1 + getal2. en bij deze som?",Concept Comprehension,Pasting Code Without Explanation,instrumental,executive,Code/Concept Comprehension,Pasting Code Without Explanation
+en wat doet return in deze som?,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"Schrijf een functie met 2 argumenten:
+getal1
+getal2
+Return de grootste van deze 2 getallen.
+Voer de functie daarna uit met verschillende waarden en print de uitkomst. def grootste(getal1, getal2):
+      
+    ...
+# Voorbeelden van aanroepen:
+# print(grootste(10, 5))   # 10
+# print(grootste(3, 7))    # 7",Copying Notebook Questions,Copying Notebook Questions,executive,executive,Copying Notebook Questions,Copying Notebook Questions
+"Cell In[14], line 2
+    print(grootste(10, 5))
+    ^
+IndentationError: expected an indented block after function definition on line 1. wat is deze error?",Error Comprehension,Error Comprehension,instrumental,instrumental,Error Comprehension,Error Comprehension
+"Vraag om de naam van de gebruiker
+# 2) Bepaal de lengte van de naam
+# 3) Check met behulp van % 2 of de lengte even of oneven is
+# 4) Print het resultaat",Copying Notebook Questions,Copying Notebook Questions,executive,executive,Copying Notebook Questions,Copying Notebook Questions
+hoe kan ik de lengte van de naam bepalen,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+op een andere manier,Chatbot interaction,Chatbot interaction,other,other,Chatbot interaction,Chatbot interaction
+hoe kan ik de karakters van 2 namen samen berekenen,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+wat betekend pass,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"en wat doet pss bij een ""for i in range""",Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"Schrijf een functie grootste_gemeenschappelijke_deler(a, b) om de GCD te bepalen
+Print de uitkomst (bijv. ""De GCD van 48 en 18 is 6"").",Copying Notebook Questions,Copying Notebook Questions,executive,executive,Copying Notebook Questions,Copying Notebook Questions
+"Maak een functie genaamd rekenmachine met 3 argumenten:
+getal1
+getal2
+operatie (kan 'plus', 'min', 'keer' of 'delen' zijn)
+Voer de juiste berekening uit met getal1 en getal2 op basis van de operatie en return het resultaat.
+Voer hierna de functie uit met verschillende inputs en bekijk de resultaten.
+Tip: Gebruik if/elif/else statements om te controleren welke operatie moet worden uitgevoerd.
+Let op: Het is verplicht om een functie te gebruiken en een return-waarde terug te geven. Er zijn geen tests voor deze opdracht.",Copying Notebook Questions,Copying Notebook Questions,executive,executive,Copying Notebook Questions,Copying Notebook Questions
+"Gegeven is een functie reiskosten() met 3 argumenten:
+afstand (totale afstand van de reis in kilometers)
+verbruik (aantal kilometer dat op 1 liter gereden kan worden)
+literprijs (prijs in euro's van 1 liter benzine)
+Bereken de totale kosten voor de reis en return dit bedrag.
+Hint: Om de kosten te berekenen kun je eerst uitrekenen hoeveel liter benzine je nodig hebt (afstand / verbruik). Vermenigvuldig dat met de literprijs om de totale kosten te krijgen.
+Zorg dat je de functie ook een paar keer aanroept met verschillende waarden en print de resultaten.",Copying Notebook Questions,Copying Notebook Questions,executive,executive,Copying Notebook Questions,Copying Notebook Questions
+"ik heb raise, try en except nog niet geleerd, kan het ook anders?",Fix this code / error,Chatbot interaction,executive,other,Fix this code / error,Chatbot interaction
+wat is een argument,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"TypeError                                 Traceback (most recent call last)
+Cell In[8], line 2
+      1 getal = input(""Geef een getal"")
+----> 2 if getal <0:
+      3     print(""Dit getal is negatief"")
+      4 elif getal == 0:
+TypeError: '<' not supported between instances of 'str' and 'int'. hoe los ik deze error op?",Error Comprehension,Error Comprehension,instrumental,instrumental,Error Comprehension,Error Comprehension
+"wat word bedoeld met print de lengte van de lijst, in lijsten",Question Comprehension,Concept Comprehension,instrumental,instrumental,Question Comprehension,Code/Concept Comprehension
+en print de som van de elementen in de lijst,Question Comprehension,Copying Notebook Questions,instrumental,executive,Question Comprehension,Copying Notebook Questions
+"en als je de elementen in de lijst allemaal in een nieuwe lijst wil zetten, maar dan alles 2 keer zo groot",Question Comprehension,Fix this code / error,instrumental,executive,Question Comprehension,Fix this code / error
+"Schrijf een functie met 1 argument: lijst.
+De functie maakt een nieuwe lijst aan met daarin alleen de elementen die op oneven posities (index) in de lijst staan. LET OP: een lijst begint met index 0!
+Bijvoorbeeld:
+oneven_lijst([""a"", ""b"", ""c"", ""d"", ""e""])  # --> [""b"", ""d""]
+Schrijf de code zodat de functie oneven_lijst(lijst) de juiste lijst returnt.",Copying Notebook Questions,Copying Notebook Questions,executive,executive,Copying Notebook Questions,Copying Notebook Questions
+moet je als je een string in een lijst zet er haakjes om doen,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"ik snap het niet hoe werkt dit: for i in range(len(lijst)):
+  print(lijst[i])",Code Comprehension,Chatbot interaction,instrumental,other,Code/Concept Comprehension,Chatbot interaction
+"hoe werkt het laatste stukje code in dez code ik snap het niet hoe het werkt: mijnlijst = [""Dortmund"", ""Bayern"", ""Kassel""]
+counter = 0
+while counter < len(mijnlijst):
+    print(mijnlijst[counter])
+    counter += 1
+for i in range(len(mijnlijst)):
+    print(mijnlijst[i])
+for i in lijst:
+    print(i)",Code Comprehension,Code Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+hoe kan je van een lijs woorden / cijfers eruit halen en in een andere lijst zetten,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"dit is mijn code en dit is de erro wat doe ik fout: # Start met een lijst:
+mijnLijst = [6, 3, 9, 2, 1]
+groter_dan_vijf = []
+for num in mijnlijst:
+    if num > 5:
+        groter_dan_vijf.append(num)
+        mijnLijst.remove(num)
+print(groter_dan_vijf)
+error: TypeError                                 Traceback (most recent call last)
+Cell In[5], line 6
+      3 groter_dan_vijf = []
+      5 for num in mijnlijst:
+----> 6     if num > 5:
+      7         groter_dan_vijf.append(num)
+      8         mijnLijst.remove(num)
+TypeError: '>' not supported between instances of 'str' and 'int",Error Comprehension,Code Comprehension,instrumental,instrumental,Error Comprehension,Code/Concept Comprehension
+"wat betekent deze error: TypeError                                 Traceback (most recent call last)
+Cell In[13], line 4
+      2 getallen_bij_elkaar =[]
+      3 for I in lijst:
+----> 4     getallen_bij_elkaar += I
+      6 print(getallen_bij_elkaar)
+TypeError: 'int' object is not iterable",Error Comprehension,Error Comprehension,instrumental,instrumental,Error Comprehension,Error Comprehension
+"wat doe ik fout? zeg het niet gelijk maar geef een hint: getal = 13
+if getal % 2 == 0:
+    print(""Even!"")
+# TODO: Voeg hier een else of elif toe om te checken of het getal oneven is.
+elif:
+    if getal % 2 != 0:
+        print(""Oneven"")
+else:
+    print(""0"")",Code Comprehension,Code Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"kan je zoals hier 2 keer een elif gebruiken en geen else? : naam1 = input(""Naam 1: "")
+naam2 = input(""Naam 2: "")
+lengte = len(naam1) + len(naam2)
+if lengte % 3 == 0:
+    print(""Jullie zijn voor elkaar gemaakt!"")
+elif lengte % 3 == 1:
+    print(Er is kans...)
+elif lengtet % 3 == 2:
+    print(""Jullie zullen nooit iets worden:("")",Code Comprehension,Code Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"wat doet deze error: ---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[16], line 8
+      4 groter_dan_vijf = []
+      6 counter = 0
+----> 8 while counter <= mijnLijst:
+      9     if len(mijnLijst[counter]) < 5:
+     10         counter +=1
+TypeError: '<=' not supported between instances of 'int' and 'list'",Error Comprehension,Error Comprehension,instrumental,instrumental,Error Comprehension,Error Comprehension
+"en wat doet deze error: ---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[20], line 9
+      6 counter = 0
+      8 while counter < len(mijnLijst):
+----> 9     if len(mijnLijst[counter]) <= 5:
+     10         counter +=1
+     11     elif len(mijnlijst[counter]) > 5:
+TypeError: object of type 'int' has no len()",Error Comprehension,Error Comprehension,instrumental,instrumental,Error Comprehension,Error Comprehension
+"waarom werkt deze code niet? import random
+woorden_mogelijk = [""maandag"", ""dinsdag"", ""hoi""]
+woord = random.choice(woorden_mogelijk)
+woord_geraden = [""_""] * len(woord)  # Dit maakt een lijst van underscores om de voortgang bij te houden
+geraden_letters = []  # Lijst van letters die al zijn geraden
+print("" "".join(woord_geraden))  # Print de lege underscores om aan te geven dat het woord nog niet is geraden
+# Verplaats counter_fouten naar buiten de functie
+counter_fouten = 0
+def woord_raden(letter, counter_fouten):
+    global geraden_letters  # Toegang krijgen tot de globale lijst van geraden letters
+    if letter in geraden_letters:
+        print(f""Je hebt de letter {letter} al geraden."")
+        return counter_fouten, False  # Geen wijziging in fouten, aangezien de letter al geraden is
+    # Voeg de letter toe aan de lijst van geraden letters
+    geraden_letters.append(letter)
+    # Zoek naar de letter in het woord en vervang de underscores
+    if letter in woord:
+        indices = [i for i, letter_ in enumerate(woord) if letter_ == letter]
+        for index in indices:
+            woord_geraden[index] = letter  # Vervang de underscore met de geraden letter
+        print(f""{letter} is in het woord op plek {', '.join(str(index + 1) for index in indices)}"") 
+    else:
+        print(f""{letter} is niet in het woord"")
+        counter_fouten += 1
+    
+    # Toon de voortgang na het raden van de letter
+    print("" "".join(woord_geraden))  
+    # Controleer of het woord volledig geraden is
+    if ""_"" not in woord_geraden:
+        print(""Gefeliciteerd, je hebt het woord geraden!"")
+        return counter_fouten, True  # Geef 'True' terug om aan te geven dat het spel klaar is
+    else:
+        return counter_fouten, False  # Het woord is nog niet geraden
+# Vraag om letters en roep de functie aan
+spelen = True  # Dit houdt bij of we verder moeten spelen
+while spelen:
+    letter = input(""Kies een letter: "")
+    counter_fouten, spelen = woord_raden(letter, counter_fouten)
+# Toon het aantal fouten aan het einde van het spel
+print(""Aantal fouten:"", counter_fouten)",Code Comprehension,Code Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"hij blijft dit als output geven: _ _ _ _ _ _ _
+Kies een letter:  m
+m is in het woord op plek 1
+m _ _ _ _ _ _
+Aantal fouten: 0",Code Comprehension,Code Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+maak een opdracht voor mij,Task Related Delegation,Task Related Delegation,instrumental,instrumental,Task Related Delegation,Task Related Delegation
+wat doet dit while counter < len(lijst):,Code Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+en wat als er woorden in de lijst zitten,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+hoe print ik alleen bepaalde getallen in een lijst,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"wat doe ik hier fout def grootste(getal1, getal2):
+    if getal1 > getal2:
+        print(""getal 1 is groter"")
+    elif getal1 == getal2:
+        print(""getal 1 is gelijk aan getal 2"")
+    elif getal2 > getal 1:
+        print(""getal 2 is groter"")
+print(grootste(10, 5))",Code Comprehension,Code Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"wat is de opdracht hier? # Vier Op Een Rij - Startcode voor Leerlingen
+# --- Constanten ---
+RIJEN = 6
+KOLOMMEN = 7
+SPELER_X = 'X'
+SPELER_O = 'O'
+LEEG = ' '
+# --- Functies ---
+def maak_bord():
+    """"""
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """"""
+    bord = []
+    for _ in range(RIJEN):
+        bord.append([LEEG] * KOLOMMEN)  # Elke rij is een lijst met lege vakjes
+    return bord
+def toon_bord(bord):
+    """"""
+    Print het Vier Op Een Rij bord naar de console.
+    Args:
+        bord (list): De 2D lijst die het bord representeert.
+    """"""
+    # Print kolomnummers voor makkelijkere invoer door de speler
+    print(""  "", end="""")
+    for kolom in range(KOLOMMEN):
+        print(f""{kolom+1} "", end="""") # Kolomnummers zijn 1-gebaseerd voor de gebruiker
+    print(""\n"")
+    # Print de rijen en kolommen van het bord
+    for rij in bord:
+        print(""| "", end="""") # Linker rand
+        for cel in rij:
+            print(f""{cel} | "", end="""") # Inhoud van de cel en scheidingsteken
+        print(""\n"") # Nieuwe regel na elke rij
+        print(""+---"" * KOLOMMEN + ""+"") # Scheidingslijn tussen rijen
+    print() # Extra lege regel voor de ruimte
+def laat_stuk_vallen(bord, kolom, speler_stuk):
+    """"""
+    Laat een stuk van de speler in de laagste beschikbare rij in de gegeven kolom vallen.
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd) waar het stuk in moet vallen.
+        speler_stuk (str): 'X' of 'O' die het stuk van de speler representeert.
+    Retourneert:
+        bool: True als het stuk succesvol is gevallen, False als de kolom vol is.
+    """"""
+    # --- JULLIE OPDRACHT: Implementeer deze functie ---
+    pass # Vervang 'pass' met jullie code
+def is_geldige_locatie(bord, kolom):
+    """"""
+    Controleert of een kolom een geldige locatie is om een stuk te laten vallen (niet vol).
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd).
+    Retourneert:
+        bool: True als de kolom geldig is, False anders.
+    """"""
+    # --- JULLIE OPDRACHT: Implementeer deze functie (optioneel) ---
+    pass # Vervang 'pass' met jullie code
+def controleer_winnaar(bord, speler_stuk):
+    """"""
+    Controleert of de gegeven speler het spel heeft gewonnen.
+    Args:
+        bord (list): Het spelbord.
+        speler_stuk (str): 'X' of 'O' die de speler representeert.
+    Retourneert:
+        bool: True als de speler heeft gewonnen, False anders.
+    """"""
+    # --- JULLIE OPDRACHT: Implementeer de win-logica (horizontaal, verticaal, diagonaal) ---
+    return False
+def is_bord_vol(bord):
+    """"""
+    Controleert of het bord volledig vol is (geen zetten meer mogelijk).
+    Args:
+        bord (list): Het spelbord.
+    Retourneert:
+        bool: True als het bord vol is, False anders.
+    """"""
+    # --- JULLIE OPDRACHT: Implementeer deze functie ---
+    pass
+def speel_spel():
+    """"""
+    Hoofdfunctie om het Vier Op Een Rij spel in de console te spelen.
+    """"""
+    bord = maak_bord() # Initialiseer het spelbord
+    speler_aan_beurt = SPELER_X  # Speler X begint
+    spel_over = False
+    print(""Welkom bij Vier Op Een Rij!"")
+    toon_bord(bord) # Toon het initiële lege bord
+    while not spel_over:
+        # Vraag de speler om een zet
+        while True: # Blijf loopen totdat een geldige zet is ingevoerd
+            try:
+                kolom_keuze = int(input(f""Speler {speler_aan_beurt}, kies een kolom (1-{KOLOMMEN}): "")) - 1
+                if 0 <= kolom_keuze < KOLOMMEN:
+                    if is_geldige_locatie(bord, kolom_keuze):
+                        break
+                    else:
+                        print(""Die kolom is vol. Kies een andere kolom."")
+                else:
+                    print(f""Ongeldig kolomnummer. Kies een kolom tussen 1 en {KOLOMMEN}."")
+            except ValueError:
+                print(""Ongeldige invoer. Voer een nummer in."")
+        # Laat het stuk vallen
+        laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt)
+        toon_bord(bord)
+        # Controleer op winst of gelijkspel
+        if controleer_winnaar(bord, speler_aan_beurt):
+            print(f""Speler {speler_aan_beurt} wint! Gefeliciteerd!"")
+            spel_over = True
+        elif is_bord_vol(bord):
+            print(""Gelijkspel! Bord is vol."")
+            spel_over = True
+        else:
+            # Wissel naar de andere speler
+            speler_aan_beurt = SPELER_O if speler_aan_beurt == SPELER_X else SPELER_X
+# --- Start het Spel ---
+if __name__ == ""__main__"":
+    speel_spel()",Question Comprehension,Code Comprehension,instrumental,instrumental,Question Comprehension,Code/Concept Comprehension
+dankjewel,Random,Chatbot interaction,other,other,Random,Chatbot interaction
+"moet ik dit stukje weghalen en zelf iets typen?  """"""
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """"""",Question Comprehension,Fix this code / error,instrumental,executive,Question Comprehension,Fix this code / error
+"def maak_bord():
+    """"""
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """"""
+    bord = []
+    for _ in range(RIJEN):
+        bord.append([LEEG] * KOLOMMEN)  # Elke rij is een lijst met lege vakjes
+    return bord",Pasting Code Without Explanation,Code Comprehension,executive,instrumental,Pasting Code Without Explanation,Code/Concept Comprehension
+"# Vier Op Een Rij - Startcode voor Leerlingen
+# --- Constanten ---
+RIJEN = 6
+KOLOMMEN = 7
+SPELER_X = 'X'
+SPELER_O = 'O'
+LEEG = ' '
+# --- Functies ---
+def maak_bord():
+    """"""
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """"""
+    bord = []
+    for _ in range(RIJEN):
+        bord.append([LEEG] * KOLOMMEN)  # Elke rij is een lijst met lege vakjes
+    return bord
+def toon_bord(bord):
+    """"""
+    Print het Vier Op Een Rij bord naar de console.
+    Args:
+        bord (list): De 2D lijst die het bord representeert.
+    """"""
+    # Print kolomnummers voor makkelijkere invoer door de speler
+    print(""  "", end="""")
+    for kolom in range(KOLOMMEN):
+        print(f""{kolom+1} "", end="""") # Kolomnummers zijn 1-gebaseerd voor de gebruiker
+    print(""\n"")
+    # Print de rijen en kolommen van het bord
+    for rij in bord:
+        print(""| "", end="""") # Linker rand
+        for cel in rij:
+            print(f""{cel} | "", end="""") # Inhoud van de cel en scheidingsteken
+        print(""\n"") # Nieuwe regel na elke rij
+        print(""+---"" * KOLOMMEN + ""+"") # Scheidingslijn tussen rijen
+    print() # Extra lege regel voor de ruimte
+def laat_stuk_vallen(bord, kolom, speler_stuk):
+    """"""
+    Laat een stuk van de speler in de laagste beschikbare rij in de gegeven kolom vallen.
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd) waar het stuk in moet vallen.
+        speler_stuk (str): 'X' of 'O' die het stuk van de speler representeert.
+    Retourneert:
+        bool: True als het stuk succesvol is gevallen, False als de kolom vol is.
+    """"""
+  def laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt):
+   
+    
+    for rij in reversed(bord):
+        if rij[kolom_keuze] == LEEG:
+            
+            rij[kolom_keuze] = speler_aan_beurt
+            break
+    return bord
+    pass # Vervang 'pass' met jullie code
+def is_geldige_locatie(bord, kolom):
+    """"""
+    Controleert of een kolom een geldige locatie is om een stuk te laten vallen (niet vol).
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd).
+    Retourneert:
+        bool: True als de kolom geldig is, False anders.
+    """"""
+    # --- JULLIE OPDRACHT: Implementeer deze functie (optioneel) ---
+    pass # Vervang 'pass' met jullie code
+def controleer_winnaar(bord, speler_stuk):
+    """"""
+    Controleert of de gegeven speler het spel heeft gewonnen.
+    Args:
+        bord (list): Het spelbord.
+        speler_stuk (str): 'X' of 'O' die de speler representeert.
+    Retourneert:
+        bool: True als de speler heeft gewonnen, False anders.
+    """"""
+    # --- JULLIE OPDRACHT: Implementeer de win-logica (horizontaal, verticaal, diagonaal) ---
+    return False
+def is_bord_vol(bord):
+    """"""
+    Controleert of het bord volledig vol is (geen zetten meer mogelijk).
+    Args:
+        bord (list): Het spelbord.
+    Retourneert:
+        bool: True als het bord vol is, False anders.
+    """"""
+    # --- JULLIE OPDRACHT: Implementeer deze functie ---
+    pass
+def speel_spel():
+    """"""
+    Hoofdfunctie om het Vier Op Een Rij spel in de console te spelen.
+    """"""
+    bord = maak_bord() # Initialiseer het spelbord
+    speler_aan_beurt = SPELER_X  # Speler X begint
+    spel_over = False
+    print(""Welkom bij Vier Op Een Rij!"")
+    toon_bord(bord) # Toon het initiële lege bord
+    while not spel_over:
+        # Vraag de speler om een zet
+        while True: # Blijf loopen totdat een geldige zet is ingevoerd
+            try:
+                kolom_keuze = int(input(f""Speler {speler_aan_beurt}, kies een kolom (1-{KOLOMMEN}): "")) - 1
+                if 0 <= kolom_keuze < KOLOMMEN:
+                    if is_geldige_locatie(bord, kolom_keuze):
+                        break
+                    else:
+                        print(""Die kolom is vol. Kies een andere kolom."")
+                else:
+                    print(f""Ongeldig kolomnummer. Kies een kolom tussen 1 en {KOLOMMEN}."")
+            except ValueError:
+                print(""Ongeldige invoer. Voer een nummer in."")
+        # Laat het stuk vallen
+        laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt)
+        toon_bord(bord)
+        # Controleer op winst of gelijkspel
+        if controleer_winnaar(bord, speler_aan_beurt):
+            print(f""Speler {speler_aan_beurt} wint! Gefeliciteerd!"")
+            spel_over = True
+        elif is_bord_vol(bord):
+            print(""Gelijkspel! Bord is vol."")
+            spel_over = True
+        else:
+            # Wissel naar de andere speler
+            speler_aan_beurt = SPELER_O if speler_aan_beurt == SPELER_X else SPELER_X
+# --- Start het Spel ---
+if __name__ == ""__main__"":
+    speel_spel()",Pasting Code Without Explanation,Code Comprehension,executive,instrumental,Pasting Code Without Explanation,Code/Concept Comprehension
+"hoe fix ik dit stukje  File <tokenize>:54
+    def laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt):",Fix this code / error,Code Comprehension,executive,instrumental,Fix this code / error,Code/Concept Comprehension
+op welke line moet dit,Chatbot interaction,Concept Comprehension,other,instrumental,Chatbot interaction,Code/Concept Comprehension
+hoe kan je controleren of een getal in een lijst groter is dan een getal,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+hoe zet je een getal van een lijst over naar een andere lijst,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+hoe werkt lower.variabele,Code Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"# Vier Op Een Rij - Startcode voor Leerlingen
+# --- Constanten ---
+RIJEN = 6
+KOLOMMEN = 7
+SPELER_X = 'X'
+SPELER_O = 'O'
+LEEG = ' '
+# --- Functies ---
+def maak_bord():
+    """"""
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """"""
+    bord = []
+    for _ in range(RIJEN):
+        bord.append([LEEG] * KOLOMMEN)  # Elke rij is een lijst met lege vakjes
+    return bord
+def toon_bord(bord):
+    """"""
+    Print het Vier Op Een Rij bord naar de console.
+    Args:
+        bord (list): De 2D lijst die het bord representeert.
+    """"""
+    # Print kolomnummers voor makkelijkere invoer door de speler
+    print(""  "", end="""")
+    for kolom in range(KOLOMMEN):
+        print(f""{kolom+1} "", end="""") # Kolomnummers zijn 1-gebaseerd voor de gebruiker
+    print(""\n"")
+    # Print de rijen en kolommen van het bord
+    for rij in bord:
+        print(""| "", end="""") # Linker rand
+        for cel in rij:
+            print(f""{cel} | "", end="""") # Inhoud van de cel en scheidingsteken
+        print(""\n"") # Nieuwe regel na elke rij
+        print(""+---"" * KOLOMMEN + ""+"") # Scheidingslijn tussen rijen
+    print() # Extra lege regel voor de ruimte
+def laat_stuk_vallen(bord, kolom, speler_stuk):
+    """"""
+    Laat een stuk van de speler in de laagste beschikbare rij in de gegeven kolom vallen.
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd) waar het stuk in moet vallen.
+        speler_stuk (str): 'X' of 'O' die het stuk van de speler representeert.
+    Retourneert:
+        bool: True als het stuk succesvol is gevallen, False als de kolom vol is.
+    """"""
+    # --- JULLIE OPDRACHT: Implementeer deze functie ---
+    
+        if speler_aan_beurt == SPELER_X:
+            
+        elif speler aan beurt == SPELER_O:
+            
+def is_geldige_locatie(bord, kolom):
+    """"""
+    Controleert of een kolom een geldige locatie is om een stuk te laten vallen (niet vol).
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd).
+    Retourneert:
+        bool: True als de kolom geldig is, False anders.
+    """"""
+    # --- JULLIE OPDRACHT: Implementeer deze functie (optioneel) ---
+    pass # Vervang 'pass' met jullie code
+def controleer_winnaar(bord, speler_stuk):
+    """"""
+    Controleert of de gegeven speler het spel heeft gewonnen.
+    Args:
+        bord (list): Het spelbord.
+        speler_stuk (str): 'X' of 'O' die de speler representeert.
+    Retourneert:
+        bool: True als de speler heeft gewonnen, False anders.
+    """"""
+    # --- JULLIE OPDRACHT: Implementeer de win-logica (horizontaal, verticaal, diagonaal) ---
+    return False
+def is_bord_vol(bord):
+    """"""
+    Controleert of het bord volledig vol is (geen zetten meer mogelijk).
+    Args:
+        bord (list): Het spelbord.
+    Retourneert:
+        bool: True als het bord vol is, False anders.
+    """"""
+    # --- JULLIE OPDRACHT: Implementeer deze functie ---
+    pass
+def speel_spel():
+    """"""
+    Hoofdfunctie om het Vier Op Een Rij spel in de console te spelen.
+    """"""
+    bord = maak_bord() # Initialiseer het spelbord
+    speler_aan_beurt = SPELER_X  # Speler X begint
+    spel_over = False
+    print(""Welkom bij Vier Op Een Rij!"")
+    toon_bord(bord) # Toon het initiële lege bord
+    while not spel_over:
+        # Vraag de speler om een zet
+        while True: # Blijf loopen totdat een geldige zet is ingevoerd
+            try:
+                kolom_keuze = int(input(f""Speler {speler_aan_beurt}, kies een kolom (1-{KOLOMMEN}): "")) - 1
+                if 0 <= kolom_keuze < KOLOMMEN:
+                    if is_geldige_locatie(bord, kolom_keuze):
+                        break
+                    else:
+                        print(""Die kolom is vol. Kies een andere kolom."")
+                else:
+                    print(f""Ongeldig kolomnummer. Kies een kolom tussen 1 en {KOLOMMEN}."")
+            except ValueError:
+                print(""Ongeldige invoer. Voer een nummer in."")
+        # Laat het stuk vallen
+        laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt)
+        toon_bord(bord)
+        # Controleer op winst of gelijkspel
+        if controleer_winnaar(bord, speler_aan_beurt):
+            print(f""Speler {speler_aan_beurt} wint! Gefeliciteerd!"")
+            spel_over = True
+        elif is_bord_vol(bord):
+            print(""Gelijkspel! Bord is vol."")
+            spel_over = True
+        else:
+            # Wissel naar de andere speler
+            speler_aan_beurt = SPELER_O if speler_aan_beurt == SPELER_X else SPELER_X
+# --- Start het Spel ---
+if __name__ == ""__main__"":
+    speel_spel()
+hoe kan ik in deze code een specefiek vakje een kruisje of een rondje make",Code Comprehension,Code Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+leg dit anders uit,Chatbot interaction,Task Related Delegation,other,instrumental,Chatbot interaction,Task Related Delegation
+"als ik in de def ""is_geldige_locatie"" 
+for Vol in range(len(bord) - 1, -1, -1):
+        if bord[Vol][kolom] == ' ':
+            return True
+        else:
+            return False
+invul, is dat dan goed",Code Comprehension,Code Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+hoe kan je controleren dat er 4 op een rij is,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+hij laat geen stuk vallen,Chatbot interaction,Chatbot interaction,other,other,Chatbot interaction,Chatbot interaction
+"for Rij in range(len(bord) - 1, -1, -1):
+        if bord[Rij][kolom] == "" "":
+            "" "" == speler_stuk
+            return True
+    return False
+hoezo print hij geen X of O in het speelveld",Code Comprehension,Code Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"# Vier Op Een Rij - Startcode voor Leerlingen
+# --- Constanten ---
+RIJEN = 6
+KOLOMMEN = 7
+SPELER_X = 'X'
+SPELER_O = 'O'
+LEEG = ' '
+# --- Functies ---
+def maak_bord():
+    """"""
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """"""
+    bord = []
+    for _ in range(RIJEN):
+        bord.append([LEEG] * KOLOMMEN)  # Elke rij is een lijst met lege vakjes
+    return bord
+def toon_bord(bord):
+    """"""
+    Print het Vier Op Een Rij bord naar de console.
+    Args:
+        bord (list): De 2D lijst die het bord representeert.
+    """"""
+    # Print kolomnummers voor makkelijkere invoer door de speler
+    print(""  "", end="""")
+    for kolom in range(KOLOMMEN):
+        print(f""{kolom+1} "", end="""") # Kolomnummers zijn 1-gebaseerd voor de gebruiker
+    print(""\n"")
+    # Print de rijen en kolommen van het bord
+    for rij in bord:
+        print(""| "", end="""") # Linker rand
+        for cel in rij:
+            print(f""{cel} | "", end="""") # Inhoud van de cel en scheidingsteken
+        print(""\n"") # Nieuwe regel na elke rij
+        print(""+---"" * KOLOMMEN + ""+"") # Scheidingslijn tussen rijen
+    print() # Extra lege regel voor de ruimte
+def laat_stuk_vallen(bord, kolom, speler_stuk,):
+    """"""
+    Laat een stuk van de speler in de laagste beschikbare rij in de gegeven kolom vallen.
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd) waar het stuk in moet vallen.
+        speler_stuk (str): 'X' of 'O' die het stuk van de speler representeert.
+    Retourneert:
+        bool: True als het stuk succesvol is gevallen, False als de kolom vol is.
+    """"""
+    # --- JULLIE OPDRACHT: Implementeer deze functie -----------------------------------------------------------------------
+    
+    
+    for Rij in range(len(bord) - 1, -1, -1):
+        if bord[Rij][kolom] == "" "":
+            bord[Rij][kolom] = speler_stuk
+            return True
+    return False
+def is_geldige_locatie(bord, kolom):
+    """"""
+    Controleert of een kolom een geldige locatie is om een stuk te laten vallen (niet vol).
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd).
+    Retourneert:
+        bool: True als de kolom geldig is, False anders.
+    """"""
+    # --- JULLIE OPDRACHT: Implementeer deze functie (optioneel) ------------------------------------------------------------
+    for Vol in range(len(bord) - 1, -1, -1):
+        if bord[Vol][kolom] == ' ':
+            return True
+        else:
+            return False
+    
+    if is_geldige_locatie(bord, kolom_keuze):
+        laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt)
+    else:
+        print(""Kolom is niet leeg, kies een andere!"")
+    
+def controleer_winnaar(bord, speler_stuk):
+    """"""
+    Controleert of de gegeven speler het spel heeft gewonnen.
+    Args:
+        bord (list): Het spelbord.
+        speler_stuk (str): 'X' of 'O' die de speler representeert.
+    Retourneert:
+        bool: True als de speler heeft gewonnen, False anders.
+    """"""
+    #--- JULLIE OPDRACHT: Implementeer de win-logica (horizontaal, verticaal, diagonaal) ---
+    for rij in range(len(bord)):
+        for kolom in range(len(bord[rij]) - 3):
+            if bord[rij][kolom] == bord[rij][kolom + 1] == bord[rij][kolom + 2] == bord[rij][kolom + 3] == ""X"" or ""O"":
+                return True
+    for kolom in range(len(bord[0])):
+        for rij in range(len(bord) - 3):
+            if bord[rij][kolom] == bord[rij + 1][kolom] == bord[rij + 2][kolom] == bord[rij + 3][kolom] == ""X"" or ""O"":
+                return True
+    for rij in range(len(bord) - 3):
+        for kolom in range(len(bord[0]) - 3):
+            if bord[rij][kolom] == bord[rij + 1][kolom + 1] == bord[rij + 2][kolom + 2] == bord[rij + 3][kolom + 3] == ""X"" or ""O"":
+                return True
+    for rij in range(len(bord) - 3):
+        for kolom in range(3, len(bord[0])):
+            if bord[rij][kolom] == bord[rij + 1][kolom - 1] == bord[rij + 2][kolom -2] == bord[rij + 3][kolom - 3] == ""X"" or ""O"":
+                return True
+    return False
+        
+        
+def is_bord_vol(bord):
+    """"""
+    Controleert of het bord volledig vol is (geen zetten meer mogelijk).
+    Args:
+        bord (list): Het spelbord.
+    Retourneert:
+        bool: True als het bord vol is, False anders.
+    """"""
+    # --- JULLIE OPDRACHT: Implementeer deze functie ---
+    pass
+def speel_spel():
+    """"""
+    Hoofdfunctie om het Vier Op Een Rij spel in de console te spelen.
+    """"""
+    bord = maak_bord() # Initialiseer het spelbord
+    speler_aan_beurt = SPELER_X  # Speler X begint
+    spel_over = False
+    print(""Welkom bij Vier Op Een Rij!"")
+    toon_bord(bord) # Toon het initiële lege bord
+    while not spel_over:
+        # Vraag de speler om een zet
+        while True: # Blijf loopen totdat een geldige zet is ingevoerd
+            try:
+                kolom_keuze = int(input(f""Speler {speler_aan_beurt}, kies een kolom (1-{KOLOMMEN}): "")) - 1
+                if 0 <= kolom_keuze < KOLOMMEN:
+                    if is_geldige_locatie(bord, kolom_keuze):
+                        break
+                    else:
+                        print(""Die kolom is vol. Kies een andere kolom."")
+                else:
+                    print(f""Ongeldig kolomnummer. Kies een kolom tussen 1 en {KOLOMMEN}."")
+            except ValueError:
+                print(""Ongeldige invoer. Voer een nummer in."")
+        # Laat het stuk vallen
+        laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt)
+        toon_bord(bord)
+        # Controleer op winst of gelijkspel
+        if controleer_winnaar(bord, speler_aan_beurt):
+            print(f""Speler {speler_aan_beurt} wint! Gefeliciteerd!"")
+            spel_over = True
+        elif is_bord_vol(bord):
+            print(""Gelijkspel! Bord is vol."")
+            spel_over = True
+        else:
+            # Wissel naar de andere speler
+            speler_aan_beurt = SPELER_O if speler_aan_beurt == SPELER_X else SPELER_X
+# --- Start het Spel ---
+if __name__ == ""__main__"":
+    speel_spel()
+Hij geeft bij elke input dat X heeft gewonnnen",Code Comprehension,Code Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+zorg ervoor dat als een vakje is gekozen hij erboven word geplaatst,Fix this code / error,Fix this code / error,executive,executive,Fix this code / error,Fix this code / error
+"Maak een text-based adventure game in Python. We geven je weinig details, dus het is aan jou om creatief te zijn:
+Gebruik print-statements om de speler een verhaal en keuzes te geven.
+Vang spelersinvoer (input()) op om te bepalen wat er daarna gebeurt.
+Werk met loops, functies, en conditionals om verschillende paden en eindes te maken.
+Voorbeeld:
+print(""Je wordt wakker in een donkere kamer..."")
+keuze = input(""Ga je links (L) of rechts (R)? "")
+if keuze.lower() == 'l':
+    print(""Je komt in een kamer vol zombies!"")
+else:
+    print(""Je vindt een deur die naar buiten leidt!"")
+Jouw uitdaging: bouw iets uit waar de speler echt verschillende paden kan volgen en meerdere eindes kan krijgen! Maak goede code die makkelijk uit te breiden is, gebruik de chatbot!",Copying Notebook Questions,Copying Notebook Questions,executive,executive,Copying Notebook Questions,Copying Notebook Questions
+"Als het deelbaar is door 3 (modulo 3 == 0) print ""fizz"".",Fix this code / error,Code Comprehension,executive,instrumental,Fix this code / error,Code/Concept Comprehension
+"Groter dan 5
+Schrijf een programma dat elk getal groter dan 5 in een nieuwe lijst stopt en deze lijst returnt.
+Dus [6, 3, 9, 2, 1] wordt [6, 9].
+Dit moet bij elke lijst werken, ongeacht het aantal elementen in de lijst.",Copying Notebook Questions,Copying Notebook Questions,executive,executive,Copying Notebook Questions,Copying Notebook Questions
+noem een ander programma hiervoor,Chatbot interaction,Chatbot interaction,other,other,Chatbot interaction,Chatbot interaction
+kun je een programma maken met beginners codedering,Fix this code / error,Concept Comprehension,executive,instrumental,Fix this code / error,Code/Concept Comprehension
+"Cell In[3], line 14
+    keuze2 = input(""Ga je naar de man in de steeg (A) , of blijf je doorlopen (B) ?)
+                   ^
+SyntaxError: unterminated string literal (detected at line 14)
+wat betekent deze code?",Error Comprehension,Error Comprehension,instrumental,instrumental,Error Comprehension,Error Comprehension
+ik wil een tex based advanture game maken waar er meerdere paden en eindes zijn. Hoe kan ik er voor zorgen dat mijn game meerdere paden en eindes heeft?,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"ik wil dat het verhaal meerdere eindingen heeft, hoe kan ik dat het beste doen?",Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"wat kan ik doen om deze eror te voorkomen?   Cell In[4], line 1
+    def lijst_maker(10, 50):
+                    ^
+SyntaxError: invalid syntax",Error Comprehension,Error Comprehension,instrumental,instrumental,Error Comprehension,Error Comprehension
+can you put a function in a function?,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+how to define the amount of letters in a word\,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+what is 'pass' in python code?,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"what does the ""len("" code do",Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+hoe schrijf je een code om een random getal tussen 0 en 50 te krijgen,Code Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"wat doet de code ""pass""",Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+hoe kan je met een code zien hoelang een woord is,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"help me met deze vraag stap voor stap Maak een liefdes-rekenmachine volgens de volgende stappen:
+Vraag om 2 namen met inputs.
+Bereken het totaal aantal karakters van deze 2 namen samen.
+Neem de modulo van dit totaal gedeeld door 3 (dus (aantal_karakters % 3)).
+Gebruik een if/elif/else-structuur om:
+Als de modulo 0 is, print: ""Jullie zijn voor elkaar gemaakt!""
+Als de modulo 1 is, print: ""Er is kans...""
+Als de modulo 2 is, print: ""Jullie zullen nooit iets worden :(""
+Maak het bericht persoonlijk door de namen te gebruiken in de prints. Voorbeeld:
+Noor en Jan, jullie zijn voor elkaar gemaakt!",Copying Notebook Questions,Copying Notebook Questions,executive,executive,Copying Notebook Questions,Copying Notebook Questions
+aarvoor zou je een pass moeten gebruiken in een code en waarvoor dient het,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"Dit is een van de beroemdste programmeeropdrachten ooit! Het idee:
+Loop door de getallen 1 tot en met 50.
+Voor elk getal:
+Als het deelbaar is door 3 (modulo 3 == 0) print ""fizz"".
+Als het deelbaar is door 5 (modulo 5 == 0) print ""buzz"".
+Als het deelbaar is door 3 en 5 (dus modulo 3 == 0 én modulo 5 == 0) print ""fizzbuzz"".
+In alle andere gevallen print je gewoon het getal zelf. en maak alleen de eerste stap",Copying Notebook Questions,Copying Notebook Questions,executive,executive,Copying Notebook Questions,Copying Notebook Questions
+maak nog 1 stap,Chatbot interaction,Task Related Delegation,other,instrumental,Chatbot interaction,Task Related Delegation
+wat is de laatste stap,Chatbot interaction,Concept Comprehension,other,instrumental,Chatbot interaction,Code/Concept Comprehension
+"Schrijf een functie grootste_gemeenschappelijke_deler(a, b) die met behulp van loops, conditionals en modulo de Grootste Gemeenschappelijke Deler (GCD) van twee getallen teruggeeft.
+Vraag de gebruiker om 2 positieve getallen a en b.
+Schrijf een functie grootste_gemeenschappelijke_deler(a, b) om de GCD te bepalen
+Print de uitkomst (bijv. ""De GCD van 48 en 18 is 6""). kan je de eerste 2 stappen geven en uitleggen",Copying Notebook Questions,Copying Notebook Questions,executive,executive,Copying Notebook Questions,Copying Notebook Questions
+geef nof 1 stap,Chatbot interaction,Fix this code / error,other,executive,Chatbot interaction,Fix this code / error
+"kan je uitleggen waarom deze code niet werkt in meerdere stappen alsof ik nog een beginner ben def plus(getal1, getal2):
+    print (getal1 + getal2)
+    
+    plus(10.5)",Concept Comprehension,Code Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"Schrijf een functie met 2 argumenten:
+getal1
+getal2
+Return de grootste van deze 2 getallen.
+Voer de functie daarna uit met verschillende waarden en print de uitkomst.",Copying Notebook Questions,Copying Notebook Questions,executive,executive,Copying Notebook Questions,Copying Notebook Questions
+"wat is er fout aan deze code def plus(getal1, getal2):
+    print (getal1 + getal2)
+    
+    plus(10,5)",Concept Comprehension,Code Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"is de code nogsteeds goed voor deze opdracht en zo niet verbeter het Schrijf een functie met 2 argumenten:
+getal1 getal2 Return de grootste van deze 2 getallen.
+Voer de functie daarna uit met verschillende waarden en print de uitkomst.",Fix this code / error,Copying Notebook Questions,executive,executive,Fix this code / error,Copying Notebook Questions
+wat doet pass in een code,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"maak de volgende opdracht en leg uit wat je doet in meerdere stappen                                        Schrijf een programma dat elk getal groter dan 5 in een nieuwe lijst stopt en deze lijst returnt.
+Dus [6, 3, 9, 2, 1] wordt [6, 9].
+Dit moet bij elke lijst werken, ongeacht het aantal elementen in de lijst.",Copying Notebook Questions,Copying Notebook Questions,executive,executive,Copying Notebook Questions,Copying Notebook Questions
+maak nu de opdracht in stappen,Fix this code / error,Fix this code / error,executive,executive,Fix this code / error,Fix this code / error
+leg uit wat je hebt gedaan,Concept Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+wat doet de append,Code Comprehension,Concept Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension
+"wat is er fout aan deze code lijst = [1, 2, 3, 4]
+ 
+def som_van_lijst(lst):
+    totaal = 0
+    for totaal in lst:
+        totaal += getal
+    return totaal
+",Code Comprehension,Code Comprehension,instrumental,instrumental,Code/Concept Comprehension,Code/Concept Comprehension

@@ -1,0 +1,2342 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dutch Question Classifier Evaluation</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <style>
+        body { padding: 20px; }
+        .metric-card { margin-bottom: 20px; }
+        img { max-width: 100%; height: auto; }
+        .tab-content { padding: 20px 0; }
+        .nav-tabs { margin-bottom: 20px; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <h1 class="mb-4">Dutch Question Classifier Evaluation Report</h1>
+        
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <div class="card text-white bg-primary metric-card">
+              <div class="card-header">Category Accuracy</div>
+              <div class="card-body">
+                <h5 class="card-title">71.96%</h5>
+                <p class="card-text">Classification accuracy across all 10 original categories</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-white bg-success metric-card">
+              <div class="card-header">Merged Accuracy</div>
+              <div class="card-body">
+                <h5 class="card-title">77.57%</h5>
+                <p class="card-text">Accuracy with Code/Concept Comprehension unified</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-white bg-info metric-card">
+              <div class="card-header">Type Accuracy</div>
+              <div class="card-body">
+                <h5 class="card-title">82.24%</h5>
+                <p class="card-text">Accuracy when grouping into instrumental, executive, other</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="category-tab" data-bs-toggle="tab" 
+                   data-bs-target="#category" type="button" role="tab" aria-selected="true">
+              Categories
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="merged-tab" data-bs-toggle="tab" 
+                   data-bs-target="#merged" type="button" role="tab" aria-selected="false">
+              Merged Categories
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="type-tab" data-bs-toggle="tab" 
+                   data-bs-target="#type" type="button" role="tab" aria-selected="false">
+              Types
+            </button>
+          </li>
+        </ul>
+        
+        <div class="tab-content" id="myTabContent">
+          <!-- Category Tab -->
+          <div class="tab-pane fade show active" id="category" role="tabpanel">
+            <h2>Category Evaluation</h2>
+            
+            <h3>Confusion Matrix</h3>
+            <div class="mb-4">
+              <img src="images/category_confusion_matrix.png" alt="Category Confusion Matrix" class="img-fluid">
+            </div>
+            
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Category Distribution</h3>
+                <img src="images/category_distribution.png" alt="Category Distribution" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>Classification Metrics</h3>
+                <img src="images/category_metrics.png" alt="Category Metrics" class="img-fluid">
+              </div>
+            </div>
+            
+            <h3>Detailed Metrics</h3>
+            
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Label</th>
+              <th>Precision</th>
+              <th>Recall</th>
+              <th>F1-score</th>
+              <th>Support</th>
+            </tr>
+          </thead>
+          <tbody>
+        
+                <tr>
+                  <td>Chatbot interaction</td>
+                  <td>0.4444</td>
+                  <td>0.4444</td>
+                  <td>0.4444</td>
+                  <td>9.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Code Comprehension</td>
+                  <td>0.6000</td>
+                  <td>0.7059</td>
+                  <td>0.6486</td>
+                  <td>17.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Concept Comprehension</td>
+                  <td>0.8140</td>
+                  <td>0.8750</td>
+                  <td>0.8434</td>
+                  <td>40.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Copying Notebook Questions</td>
+                  <td>0.8824</td>
+                  <td>1.0000</td>
+                  <td>0.9375</td>
+                  <td>15.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Error Comprehension</td>
+                  <td>1.0000</td>
+                  <td>0.8750</td>
+                  <td>0.9333</td>
+                  <td>8.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Fix this code / error</td>
+                  <td>0.4286</td>
+                  <td>0.3750</td>
+                  <td>0.4000</td>
+                  <td>8.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Pasting Code Without Explanation</td>
+                  <td>0.0000</td>
+                  <td>0.0000</td>
+                  <td>0.0000</td>
+                  <td>2.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Question Comprehension</td>
+                  <td>0.0000</td>
+                  <td>0.0000</td>
+                  <td>0.0000</td>
+                  <td>5.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Random</td>
+                  <td>0.0000</td>
+                  <td>0.0000</td>
+                  <td>0.0000</td>
+                  <td>1.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Task Related Delegation</td>
+                  <td>0.3333</td>
+                  <td>0.5000</td>
+                  <td>0.4000</td>
+                  <td>2.0</td>
+                </tr>
+                
+                <tr class="table-info">
+                  <td>macro avg</td>
+                  <td>0.4503</td>
+                  <td>0.4775</td>
+                  <td>0.4607</td>
+                  <td>107.0</td>
+                </tr>
+                
+                <tr class="table-info">
+                  <td>weighted avg</td>
+                  <td>0.6737</td>
+                  <td>0.7196</td>
+                  <td>0.6943</td>
+                  <td>107.0</td>
+                </tr>
+                
+            <tr class="table-success">
+              <td>accuracy</td>
+              <td colspan="3">0.7196</td>
+              <td>107.0</td>
+            </tr>
+            
+          </tbody>
+        </table>
+        
+            
+            <h3>Misclassified Examples (30 of 107)</h3>
+            
+        <div class="accordion" id="misclassifiedAccordion">
+        
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading0">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                  Random → Chatbot interaction
+                </button>
+              </h2>
+              <div id="collapse0" class="accordion-collapse collapse" aria-labelledby="heading0">
+                <div class="accordion-body">
+                  <strong>Question:</strong> dankjewel<br>
+                  <strong>True Label:</strong> Random<br>
+                  <strong>Predicted Label:</strong> Chatbot interaction
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                  Error Comprehension → Code Comprehension
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1">
+                <div class="accordion-body">
+                  <strong>Question:</strong> dit is mijn code en dit is de erro wat doe ik fout: # Start met een lijst:
+mijnLijst = [6, 3, 9, 2, 1]
+groter_dan_vijf = []
+for num in mijnlijst:
+    if num > 5:
+        groter_dan_vijf.append(num)
+        mijnLijst.remove(num)
+print(groter_dan_vijf)
+error: TypeError                                 Traceback (most recent call last)
+Cell In[5], line 6
+      3 groter_dan_vijf = []
+      5 for num in mijnlijst:
+----> 6     if num > 5:
+      7         groter_dan_vijf.append(num)
+      8         mijnLijst.remove(num)
+TypeError: '>' not supported between instances of 'str' and 'int<br>
+                  <strong>True Label:</strong> Error Comprehension<br>
+                  <strong>Predicted Label:</strong> Code Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  Question Comprehension → Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2">
+                <div class="accordion-body">
+                  <strong>Question:</strong> wat word bedoeld met print de lengte van de lijst, in lijsten<br>
+                  <strong>True Label:</strong> Question Comprehension<br>
+                  <strong>Predicted Label:</strong> Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  Question Comprehension → Copying Notebook Questions
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3">
+                <div class="accordion-body">
+                  <strong>Question:</strong> en print de som van de elementen in de lijst<br>
+                  <strong>True Label:</strong> Question Comprehension<br>
+                  <strong>Predicted Label:</strong> Copying Notebook Questions
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  Question Comprehension → Fix this code / error
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4">
+                <div class="accordion-body">
+                  <strong>Question:</strong> en als je de elementen in de lijst allemaal in een nieuwe lijst wil zetten, maar dan alles 2 keer zo groot<br>
+                  <strong>True Label:</strong> Question Comprehension<br>
+                  <strong>Predicted Label:</strong> Fix this code / error
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  Question Comprehension → Code Comprehension
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5">
+                <div class="accordion-body">
+                  <strong>Question:</strong> wat is de opdracht hier? # Vier Op Een Rij - Startcode voor Leerlingen
+# --- Constanten ---
+RIJEN = 6
+KOLOMMEN = 7
+SPELER_X = 'X'
+SPELER_O = 'O'
+LEEG = ' '
+# --- Functies ---
+def maak_bord():
+    """
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """
+    bord = []
+    for _ in range(RIJEN):
+        bord.append([LEEG] * KOLOMMEN)  # Elke rij is een lijst met lege vakjes
+    return bord
+def toon_bord(bord):
+    """
+    Print het Vier Op Een Rij bord naar de console.
+    Args:
+        bord (list): De 2D lijst die het bord representeert.
+    """
+    # Print kolomnummers voor makkelijkere invoer door de speler
+    print("  ", end="")
+    for kolom in range(KOLOMMEN):
+        print(f"{kolom+1} ", end="") # Kolomnummers zijn 1-gebaseerd voor de gebruiker
+    print("\n")
+    # Print de rijen en kolommen van het bord
+    for rij in bord:
+        print("| ", end="") # Linker rand
+        for cel in rij:
+            print(f"{cel} | ", end="") # Inhoud van de cel en scheidingsteken
+        print("\n") # Nieuwe regel na elke rij
+        print("+---" * KOLOMMEN + "+") # Scheidingslijn tussen rijen
+    print() # Extra lege regel voor de ruimte
+def laat_stuk_vallen(bord, kolom, speler_stuk):
+    """
+    Laat een stuk van de speler in de laagste beschikbare rij in de gegeven kolom vallen.
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd) waar het stuk in moet vallen.
+        speler_stuk (str): 'X' of 'O' die het stuk van de speler representeert.
+    Retourneert:
+        bool: True als het stuk succesvol is gevallen, False als de kolom vol is.
+    """
+    # --- JULLIE OPDRACHT: Implementeer deze functie ---
+    pass # Vervang 'pass' met jullie code
+def is_geldige_locatie(bord, kolom):
+    """
+    Controleert of een kolom een geldige locatie is om een stuk te laten vallen (niet vol).
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd).
+    Retourneert:
+        bool: True als de kolom geldig is, False anders.
+    """
+    # --- JULLIE OPDRACHT: Implementeer deze functie (optioneel) ---
+    pass # Vervang 'pass' met jullie code
+def controleer_winnaar(bord, speler_stuk):
+    """
+    Controleert of de gegeven speler het spel heeft gewonnen.
+    Args:
+        bord (list): Het spelbord.
+        speler_stuk (str): 'X' of 'O' die de speler representeert.
+    Retourneert:
+        bool: True als de speler heeft gewonnen, False anders.
+    """
+    # --- JULLIE OPDRACHT: Implementeer de win-logica (horizontaal, verticaal, diagonaal) ---
+    return False
+def is_bord_vol(bord):
+    """
+    Controleert of het bord volledig vol is (geen zetten meer mogelijk).
+    Args:
+        bord (list): Het spelbord.
+    Retourneert:
+        bool: True als het bord vol is, False anders.
+    """
+    # --- JULLIE OPDRACHT: Implementeer deze functie ---
+    pass
+def speel_spel():
+    """
+    Hoofdfunctie om het Vier Op Een Rij spel in de console te spelen.
+    """
+    bord = maak_bord() # Initialiseer het spelbord
+    speler_aan_beurt = SPELER_X  # Speler X begint
+    spel_over = False
+    print("Welkom bij Vier Op Een Rij!")
+    toon_bord(bord) # Toon het initiële lege bord
+    while not spel_over:
+        # Vraag de speler om een zet
+        while True: # Blijf loopen totdat een geldige zet is ingevoerd
+            try:
+                kolom_keuze = int(input(f"Speler {speler_aan_beurt}, kies een kolom (1-{KOLOMMEN}): ")) - 1
+                if 0 <= kolom_keuze < KOLOMMEN:
+                    if is_geldige_locatie(bord, kolom_keuze):
+                        break
+                    else:
+                        print("Die kolom is vol. Kies een andere kolom.")
+                else:
+                    print(f"Ongeldig kolomnummer. Kies een kolom tussen 1 en {KOLOMMEN}.")
+            except ValueError:
+                print("Ongeldige invoer. Voer een nummer in.")
+        # Laat het stuk vallen
+        laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt)
+        toon_bord(bord)
+        # Controleer op winst of gelijkspel
+        if controleer_winnaar(bord, speler_aan_beurt):
+            print(f"Speler {speler_aan_beurt} wint! Gefeliciteerd!")
+            spel_over = True
+        elif is_bord_vol(bord):
+            print("Gelijkspel! Bord is vol.")
+            spel_over = True
+        else:
+            # Wissel naar de andere speler
+            speler_aan_beurt = SPELER_O if speler_aan_beurt == SPELER_X else SPELER_X
+# --- Start het Spel ---
+if __name__ == "__main__":
+    speel_spel()<br>
+                  <strong>True Label:</strong> Question Comprehension<br>
+                  <strong>Predicted Label:</strong> Code Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                  Question Comprehension → Fix this code / error
+                </button>
+              </h2>
+              <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6">
+                <div class="accordion-body">
+                  <strong>Question:</strong> moet ik dit stukje weghalen en zelf iets typen?  """
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """<br>
+                  <strong>True Label:</strong> Question Comprehension<br>
+                  <strong>Predicted Label:</strong> Fix this code / error
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                  Pasting Code Without Explanation → Code Comprehension
+                </button>
+              </h2>
+              <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7">
+                <div class="accordion-body">
+                  <strong>Question:</strong> def maak_bord():
+    """
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """
+    bord = []
+    for _ in range(RIJEN):
+        bord.append([LEEG] * KOLOMMEN)  # Elke rij is een lijst met lege vakjes
+    return bord<br>
+                  <strong>True Label:</strong> Pasting Code Without Explanation<br>
+                  <strong>Predicted Label:</strong> Code Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                  Pasting Code Without Explanation → Code Comprehension
+                </button>
+              </h2>
+              <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8">
+                <div class="accordion-body">
+                  <strong>Question:</strong> # Vier Op Een Rij - Startcode voor Leerlingen
+# --- Constanten ---
+RIJEN = 6
+KOLOMMEN = 7
+SPELER_X = 'X'
+SPELER_O = 'O'
+LEEG = ' '
+# --- Functies ---
+def maak_bord():
+    """
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """
+    bord = []
+    for _ in range(RIJEN):
+        bord.append([LEEG] * KOLOMMEN)  # Elke rij is een lijst met lege vakjes
+    return bord
+def toon_bord(bord):
+    """
+    Print het Vier Op Een Rij bord naar de console.
+    Args:
+        bord (list): De 2D lijst die het bord representeert.
+    """
+    # Print kolomnummers voor makkelijkere invoer door de speler
+    print("  ", end="")
+    for kolom in range(KOLOMMEN):
+        print(f"{kolom+1} ", end="") # Kolomnummers zijn 1-gebaseerd voor de gebruiker
+    print("\n")
+    # Print de rijen en kolommen van het bord
+    for rij in bord:
+        print("| ", end="") # Linker rand
+        for cel in rij:
+            print(f"{cel} | ", end="") # Inhoud van de cel en scheidingsteken
+        print("\n") # Nieuwe regel na elke rij
+        print("+---" * KOLOMMEN + "+") # Scheidingslijn tussen rijen
+    print() # Extra lege regel voor de ruimte
+def laat_stuk_vallen(bord, kolom, speler_stuk):
+    """
+    Laat een stuk van de speler in de laagste beschikbare rij in de gegeven kolom vallen.
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd) waar het stuk in moet vallen.
+        speler_stuk (str): 'X' of 'O' die het stuk van de speler representeert.
+    Retourneert:
+        bool: True als het stuk succesvol is gevallen, False als de kolom vol is.
+    """
+  def laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt):
+   
+    
+    for rij in reversed(bord):
+        if rij[kolom_keuze] == LEEG:
+            
+            rij[kolom_keuze] = speler_aan_beurt
+            break
+    return bord
+    pass # Vervang 'pass' met jullie code
+def is_geldige_locatie(bord, kolom):
+    """
+    Controleert of een kolom een geldige locatie is om een stuk te laten vallen (niet vol).
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd).
+    Retourneert:
+        bool: True als de kolom geldig is, False anders.
+    """
+    # --- JULLIE OPDRACHT: Implementeer deze functie (optioneel) ---
+    pass # Vervang 'pass' met jullie code
+def controleer_winnaar(bord, speler_stuk):
+    """
+    Controleert of de gegeven speler het spel heeft gewonnen.
+    Args:
+        bord (list): Het spelbord.
+        speler_stuk (str): 'X' of 'O' die de speler representeert.
+    Retourneert:
+        bool: True als de speler heeft gewonnen, False anders.
+    """
+    # --- JULLIE OPDRACHT: Implementeer de win-logica (horizontaal, verticaal, diagonaal) ---
+    return False
+def is_bord_vol(bord):
+    """
+    Controleert of het bord volledig vol is (geen zetten meer mogelijk).
+    Args:
+        bord (list): Het spelbord.
+    Retourneert:
+        bool: True als het bord vol is, False anders.
+    """
+    # --- JULLIE OPDRACHT: Implementeer deze functie ---
+    pass
+def speel_spel():
+    """
+    Hoofdfunctie om het Vier Op Een Rij spel in de console te spelen.
+    """
+    bord = maak_bord() # Initialiseer het spelbord
+    speler_aan_beurt = SPELER_X  # Speler X begint
+    spel_over = False
+    print("Welkom bij Vier Op Een Rij!")
+    toon_bord(bord) # Toon het initiële lege bord
+    while not spel_over:
+        # Vraag de speler om een zet
+        while True: # Blijf loopen totdat een geldige zet is ingevoerd
+            try:
+                kolom_keuze = int(input(f"Speler {speler_aan_beurt}, kies een kolom (1-{KOLOMMEN}): ")) - 1
+                if 0 <= kolom_keuze < KOLOMMEN:
+                    if is_geldige_locatie(bord, kolom_keuze):
+                        break
+                    else:
+                        print("Die kolom is vol. Kies een andere kolom.")
+                else:
+                    print(f"Ongeldig kolomnummer. Kies een kolom tussen 1 en {KOLOMMEN}.")
+            except ValueError:
+                print("Ongeldige invoer. Voer een nummer in.")
+        # Laat het stuk vallen
+        laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt)
+        toon_bord(bord)
+        # Controleer op winst of gelijkspel
+        if controleer_winnaar(bord, speler_aan_beurt):
+            print(f"Speler {speler_aan_beurt} wint! Gefeliciteerd!")
+            spel_over = True
+        elif is_bord_vol(bord):
+            print("Gelijkspel! Bord is vol.")
+            spel_over = True
+        else:
+            # Wissel naar de andere speler
+            speler_aan_beurt = SPELER_O if speler_aan_beurt == SPELER_X else SPELER_X
+# --- Start het Spel ---
+if __name__ == "__main__":
+    speel_spel()<br>
+                  <strong>True Label:</strong> Pasting Code Without Explanation<br>
+                  <strong>Predicted Label:</strong> Code Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading9">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                  Task Related Delegation → Fix this code / error
+                </button>
+              </h2>
+              <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9">
+                <div class="accordion-body">
+                  <strong>Question:</strong> maak een opdracht zoals dit<br>
+                  <strong>True Label:</strong> Task Related Delegation<br>
+                  <strong>Predicted Label:</strong> Fix this code / error
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading10">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                  Concept Comprehension → Chatbot interaction
+                </button>
+              </h2>
+              <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10">
+                <div class="accordion-body">
+                  <strong>Question:</strong> what das len do<br>
+                  <strong>True Label:</strong> Concept Comprehension<br>
+                  <strong>Predicted Label:</strong> Chatbot interaction
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading11">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                  Concept Comprehension → Chatbot interaction
+                </button>
+              </h2>
+              <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11">
+                <div class="accordion-body">
+                  <strong>Question:</strong> what does .lower do?<br>
+                  <strong>True Label:</strong> Concept Comprehension<br>
+                  <strong>Predicted Label:</strong> Chatbot interaction
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading12">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                  Concept Comprehension → Pasting Code Without Explanation
+                </button>
+              </h2>
+              <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12">
+                <div class="accordion-body">
+                  <strong>Question:</strong> def rekenen1():
+    getal1 = 50
+    getal2 = 5
+    return getal1 + getal2. en bij deze som?<br>
+                  <strong>True Label:</strong> Concept Comprehension<br>
+                  <strong>Predicted Label:</strong> Pasting Code Without Explanation
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading13">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                  Concept Comprehension → Code Comprehension
+                </button>
+              </h2>
+              <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13">
+                <div class="accordion-body">
+                  <strong>Question:</strong> kan je uitleggen waarom deze code niet werkt in meerdere stappen alsof ik nog een beginner ben def plus(getal1, getal2):
+    print (getal1 + getal2)
+    
+    plus(10.5)<br>
+                  <strong>True Label:</strong> Concept Comprehension<br>
+                  <strong>Predicted Label:</strong> Code Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading14">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                  Concept Comprehension → Code Comprehension
+                </button>
+              </h2>
+              <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14">
+                <div class="accordion-body">
+                  <strong>Question:</strong> wat is er fout aan deze code def plus(getal1, getal2):
+    print (getal1 + getal2)
+    
+    plus(10,5)<br>
+                  <strong>True Label:</strong> Concept Comprehension<br>
+                  <strong>Predicted Label:</strong> Code Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading15">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                  Chatbot interaction → Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15">
+                <div class="accordion-body">
+                  <strong>Question:</strong> op welke line moet dit<br>
+                  <strong>True Label:</strong> Chatbot interaction<br>
+                  <strong>Predicted Label:</strong> Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading16">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                  Chatbot interaction → Task Related Delegation
+                </button>
+              </h2>
+              <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16">
+                <div class="accordion-body">
+                  <strong>Question:</strong> leg dit anders uit<br>
+                  <strong>True Label:</strong> Chatbot interaction<br>
+                  <strong>Predicted Label:</strong> Task Related Delegation
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading17">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                  Chatbot interaction → Task Related Delegation
+                </button>
+              </h2>
+              <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17">
+                <div class="accordion-body">
+                  <strong>Question:</strong> maak nog 1 stap<br>
+                  <strong>True Label:</strong> Chatbot interaction<br>
+                  <strong>Predicted Label:</strong> Task Related Delegation
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading18">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                  Chatbot interaction → Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18">
+                <div class="accordion-body">
+                  <strong>Question:</strong> wat is de laatste stap<br>
+                  <strong>True Label:</strong> Chatbot interaction<br>
+                  <strong>Predicted Label:</strong> Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading19">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                  Chatbot interaction → Fix this code / error
+                </button>
+              </h2>
+              <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19">
+                <div class="accordion-body">
+                  <strong>Question:</strong> geef nof 1 stap<br>
+                  <strong>True Label:</strong> Chatbot interaction<br>
+                  <strong>Predicted Label:</strong> Fix this code / error
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading20">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                  Code Comprehension → Chatbot interaction
+                </button>
+              </h2>
+              <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20">
+                <div class="accordion-body">
+                  <strong>Question:</strong> ik snap het niet hoe werkt dit: for i in range(len(lijst)):
+  print(lijst[i])<br>
+                  <strong>True Label:</strong> Code Comprehension<br>
+                  <strong>Predicted Label:</strong> Chatbot interaction
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading21">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                  Code Comprehension → Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="heading21">
+                <div class="accordion-body">
+                  <strong>Question:</strong> wat doet dit while counter < len(lijst):<br>
+                  <strong>True Label:</strong> Code Comprehension<br>
+                  <strong>Predicted Label:</strong> Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading22">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                  Code Comprehension → Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22">
+                <div class="accordion-body">
+                  <strong>Question:</strong> hoe werkt lower.variabele<br>
+                  <strong>True Label:</strong> Code Comprehension<br>
+                  <strong>Predicted Label:</strong> Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading23">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                  Code Comprehension → Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23">
+                <div class="accordion-body">
+                  <strong>Question:</strong> hoe schrijf je een code om een random getal tussen 0 en 50 te krijgen<br>
+                  <strong>True Label:</strong> Code Comprehension<br>
+                  <strong>Predicted Label:</strong> Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading24">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                  Code Comprehension → Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse24" class="accordion-collapse collapse" aria-labelledby="heading24">
+                <div class="accordion-body">
+                  <strong>Question:</strong> wat doet de append<br>
+                  <strong>True Label:</strong> Code Comprehension<br>
+                  <strong>Predicted Label:</strong> Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading25">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse25" aria-expanded="false" aria-controls="collapse25">
+                  Fix this code / error → Chatbot interaction
+                </button>
+              </h2>
+              <div id="collapse25" class="accordion-collapse collapse" aria-labelledby="heading25">
+                <div class="accordion-body">
+                  <strong>Question:</strong> ik heb raise, try en except nog niet geleerd, kan het ook anders?<br>
+                  <strong>True Label:</strong> Fix this code / error<br>
+                  <strong>Predicted Label:</strong> Chatbot interaction
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading26">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse26" aria-expanded="false" aria-controls="collapse26">
+                  Fix this code / error → Code Comprehension
+                </button>
+              </h2>
+              <div id="collapse26" class="accordion-collapse collapse" aria-labelledby="heading26">
+                <div class="accordion-body">
+                  <strong>Question:</strong> hoe fix ik dit stukje  File <tokenize>:54
+    def laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt):<br>
+                  <strong>True Label:</strong> Fix this code / error<br>
+                  <strong>Predicted Label:</strong> Code Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading27">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse27" aria-expanded="false" aria-controls="collapse27">
+                  Fix this code / error → Code Comprehension
+                </button>
+              </h2>
+              <div id="collapse27" class="accordion-collapse collapse" aria-labelledby="heading27">
+                <div class="accordion-body">
+                  <strong>Question:</strong> Als het deelbaar is door 3 (modulo 3 == 0) print "fizz".<br>
+                  <strong>True Label:</strong> Fix this code / error<br>
+                  <strong>Predicted Label:</strong> Code Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading28">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse28" aria-expanded="false" aria-controls="collapse28">
+                  Fix this code / error → Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse28" class="accordion-collapse collapse" aria-labelledby="heading28">
+                <div class="accordion-body">
+                  <strong>Question:</strong> kun je een programma maken met beginners codedering<br>
+                  <strong>True Label:</strong> Fix this code / error<br>
+                  <strong>Predicted Label:</strong> Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading29">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse29" aria-expanded="false" aria-controls="collapse29">
+                  Fix this code / error → Copying Notebook Questions
+                </button>
+              </h2>
+              <div id="collapse29" class="accordion-collapse collapse" aria-labelledby="heading29">
+                <div class="accordion-body">
+                  <strong>Question:</strong> is de code nogsteeds goed voor deze opdracht en zo niet verbeter het Schrijf een functie met 2 argumenten:
+getal1 getal2 Return de grootste van deze 2 getallen.
+Voer de functie daarna uit met verschillende waarden en print de uitkomst.<br>
+                  <strong>True Label:</strong> Fix this code / error<br>
+                  <strong>Predicted Label:</strong> Copying Notebook Questions
+                </div>
+              </div>
+            </div>
+            
+        </div>
+        
+          </div>
+          
+          <!-- Merged Categories Tab -->
+          <div class="tab-pane fade" id="merged" role="tabpanel">
+            <h2>Merged Categories Evaluation</h2>
+            
+            <h3>Confusion Matrix</h3>
+            <div class="mb-4">
+              <img src="images/merged_confusion_matrix.png" alt="Merged Categories Confusion Matrix" class="img-fluid">
+            </div>
+            
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Category Distribution</h3>
+                <img src="images/merged_distribution.png" alt="Merged Categories Distribution" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>Classification Metrics</h3>
+                <img src="images/merged_metrics.png" alt="Merged Categories Metrics" class="img-fluid">
+              </div>
+            </div>
+            
+            <h3>Detailed Metrics</h3>
+            
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Label</th>
+              <th>Precision</th>
+              <th>Recall</th>
+              <th>F1-score</th>
+              <th>Support</th>
+            </tr>
+          </thead>
+          <tbody>
+        
+                <tr>
+                  <td>Chatbot interaction</td>
+                  <td>0.4444</td>
+                  <td>0.4444</td>
+                  <td>0.4444</td>
+                  <td>9.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Code/Concept Comprehension</td>
+                  <td>0.8413</td>
+                  <td>0.9298</td>
+                  <td>0.8833</td>
+                  <td>57.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Copying Notebook Questions</td>
+                  <td>0.8824</td>
+                  <td>1.0000</td>
+                  <td>0.9375</td>
+                  <td>15.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Error Comprehension</td>
+                  <td>1.0000</td>
+                  <td>0.8750</td>
+                  <td>0.9333</td>
+                  <td>8.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Fix this code / error</td>
+                  <td>0.4286</td>
+                  <td>0.3750</td>
+                  <td>0.4000</td>
+                  <td>8.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Pasting Code Without Explanation</td>
+                  <td>0.0000</td>
+                  <td>0.0000</td>
+                  <td>0.0000</td>
+                  <td>2.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Question Comprehension</td>
+                  <td>0.0000</td>
+                  <td>0.0000</td>
+                  <td>0.0000</td>
+                  <td>5.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Random</td>
+                  <td>0.0000</td>
+                  <td>0.0000</td>
+                  <td>0.0000</td>
+                  <td>1.0</td>
+                </tr>
+                
+                <tr>
+                  <td>Task Related Delegation</td>
+                  <td>0.3333</td>
+                  <td>0.5000</td>
+                  <td>0.4000</td>
+                  <td>2.0</td>
+                </tr>
+                
+                <tr class="table-info">
+                  <td>macro avg</td>
+                  <td>0.4367</td>
+                  <td>0.4583</td>
+                  <td>0.4443</td>
+                  <td>107.0</td>
+                </tr>
+                
+                <tr class="table-info">
+                  <td>weighted avg</td>
+                  <td>0.7223</td>
+                  <td>0.7757</td>
+                  <td>0.7465</td>
+                  <td>107.0</td>
+                </tr>
+                
+            <tr class="table-success">
+              <td>accuracy</td>
+              <td colspan="3">0.7757</td>
+              <td>107.0</td>
+            </tr>
+            
+          </tbody>
+        </table>
+        
+            
+            <h3>Misclassified Examples (24 of 107)</h3>
+            
+        <div class="accordion" id="misclassifiedAccordion">
+        
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading0">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                  Random → Chatbot interaction
+                </button>
+              </h2>
+              <div id="collapse0" class="accordion-collapse collapse" aria-labelledby="heading0">
+                <div class="accordion-body">
+                  <strong>Question:</strong> dankjewel<br>
+                  <strong>True Label:</strong> Random<br>
+                  <strong>Predicted Label:</strong> Chatbot interaction
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                  Error Comprehension → Code/Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1">
+                <div class="accordion-body">
+                  <strong>Question:</strong> dit is mijn code en dit is de erro wat doe ik fout: # Start met een lijst:
+mijnLijst = [6, 3, 9, 2, 1]
+groter_dan_vijf = []
+for num in mijnlijst:
+    if num > 5:
+        groter_dan_vijf.append(num)
+        mijnLijst.remove(num)
+print(groter_dan_vijf)
+error: TypeError                                 Traceback (most recent call last)
+Cell In[5], line 6
+      3 groter_dan_vijf = []
+      5 for num in mijnlijst:
+----> 6     if num > 5:
+      7         groter_dan_vijf.append(num)
+      8         mijnLijst.remove(num)
+TypeError: '>' not supported between instances of 'str' and 'int<br>
+                  <strong>True Label:</strong> Error Comprehension<br>
+                  <strong>Predicted Label:</strong> Code/Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  Question Comprehension → Code/Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2">
+                <div class="accordion-body">
+                  <strong>Question:</strong> wat word bedoeld met print de lengte van de lijst, in lijsten<br>
+                  <strong>True Label:</strong> Question Comprehension<br>
+                  <strong>Predicted Label:</strong> Code/Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  Question Comprehension → Copying Notebook Questions
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3">
+                <div class="accordion-body">
+                  <strong>Question:</strong> en print de som van de elementen in de lijst<br>
+                  <strong>True Label:</strong> Question Comprehension<br>
+                  <strong>Predicted Label:</strong> Copying Notebook Questions
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  Question Comprehension → Fix this code / error
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4">
+                <div class="accordion-body">
+                  <strong>Question:</strong> en als je de elementen in de lijst allemaal in een nieuwe lijst wil zetten, maar dan alles 2 keer zo groot<br>
+                  <strong>True Label:</strong> Question Comprehension<br>
+                  <strong>Predicted Label:</strong> Fix this code / error
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  Question Comprehension → Code/Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5">
+                <div class="accordion-body">
+                  <strong>Question:</strong> wat is de opdracht hier? # Vier Op Een Rij - Startcode voor Leerlingen
+# --- Constanten ---
+RIJEN = 6
+KOLOMMEN = 7
+SPELER_X = 'X'
+SPELER_O = 'O'
+LEEG = ' '
+# --- Functies ---
+def maak_bord():
+    """
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """
+    bord = []
+    for _ in range(RIJEN):
+        bord.append([LEEG] * KOLOMMEN)  # Elke rij is een lijst met lege vakjes
+    return bord
+def toon_bord(bord):
+    """
+    Print het Vier Op Een Rij bord naar de console.
+    Args:
+        bord (list): De 2D lijst die het bord representeert.
+    """
+    # Print kolomnummers voor makkelijkere invoer door de speler
+    print("  ", end="")
+    for kolom in range(KOLOMMEN):
+        print(f"{kolom+1} ", end="") # Kolomnummers zijn 1-gebaseerd voor de gebruiker
+    print("\n")
+    # Print de rijen en kolommen van het bord
+    for rij in bord:
+        print("| ", end="") # Linker rand
+        for cel in rij:
+            print(f"{cel} | ", end="") # Inhoud van de cel en scheidingsteken
+        print("\n") # Nieuwe regel na elke rij
+        print("+---" * KOLOMMEN + "+") # Scheidingslijn tussen rijen
+    print() # Extra lege regel voor de ruimte
+def laat_stuk_vallen(bord, kolom, speler_stuk):
+    """
+    Laat een stuk van de speler in de laagste beschikbare rij in de gegeven kolom vallen.
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd) waar het stuk in moet vallen.
+        speler_stuk (str): 'X' of 'O' die het stuk van de speler representeert.
+    Retourneert:
+        bool: True als het stuk succesvol is gevallen, False als de kolom vol is.
+    """
+    # --- JULLIE OPDRACHT: Implementeer deze functie ---
+    pass # Vervang 'pass' met jullie code
+def is_geldige_locatie(bord, kolom):
+    """
+    Controleert of een kolom een geldige locatie is om een stuk te laten vallen (niet vol).
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd).
+    Retourneert:
+        bool: True als de kolom geldig is, False anders.
+    """
+    # --- JULLIE OPDRACHT: Implementeer deze functie (optioneel) ---
+    pass # Vervang 'pass' met jullie code
+def controleer_winnaar(bord, speler_stuk):
+    """
+    Controleert of de gegeven speler het spel heeft gewonnen.
+    Args:
+        bord (list): Het spelbord.
+        speler_stuk (str): 'X' of 'O' die de speler representeert.
+    Retourneert:
+        bool: True als de speler heeft gewonnen, False anders.
+    """
+    # --- JULLIE OPDRACHT: Implementeer de win-logica (horizontaal, verticaal, diagonaal) ---
+    return False
+def is_bord_vol(bord):
+    """
+    Controleert of het bord volledig vol is (geen zetten meer mogelijk).
+    Args:
+        bord (list): Het spelbord.
+    Retourneert:
+        bool: True als het bord vol is, False anders.
+    """
+    # --- JULLIE OPDRACHT: Implementeer deze functie ---
+    pass
+def speel_spel():
+    """
+    Hoofdfunctie om het Vier Op Een Rij spel in de console te spelen.
+    """
+    bord = maak_bord() # Initialiseer het spelbord
+    speler_aan_beurt = SPELER_X  # Speler X begint
+    spel_over = False
+    print("Welkom bij Vier Op Een Rij!")
+    toon_bord(bord) # Toon het initiële lege bord
+    while not spel_over:
+        # Vraag de speler om een zet
+        while True: # Blijf loopen totdat een geldige zet is ingevoerd
+            try:
+                kolom_keuze = int(input(f"Speler {speler_aan_beurt}, kies een kolom (1-{KOLOMMEN}): ")) - 1
+                if 0 <= kolom_keuze < KOLOMMEN:
+                    if is_geldige_locatie(bord, kolom_keuze):
+                        break
+                    else:
+                        print("Die kolom is vol. Kies een andere kolom.")
+                else:
+                    print(f"Ongeldig kolomnummer. Kies een kolom tussen 1 en {KOLOMMEN}.")
+            except ValueError:
+                print("Ongeldige invoer. Voer een nummer in.")
+        # Laat het stuk vallen
+        laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt)
+        toon_bord(bord)
+        # Controleer op winst of gelijkspel
+        if controleer_winnaar(bord, speler_aan_beurt):
+            print(f"Speler {speler_aan_beurt} wint! Gefeliciteerd!")
+            spel_over = True
+        elif is_bord_vol(bord):
+            print("Gelijkspel! Bord is vol.")
+            spel_over = True
+        else:
+            # Wissel naar de andere speler
+            speler_aan_beurt = SPELER_O if speler_aan_beurt == SPELER_X else SPELER_X
+# --- Start het Spel ---
+if __name__ == "__main__":
+    speel_spel()<br>
+                  <strong>True Label:</strong> Question Comprehension<br>
+                  <strong>Predicted Label:</strong> Code/Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                  Question Comprehension → Fix this code / error
+                </button>
+              </h2>
+              <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6">
+                <div class="accordion-body">
+                  <strong>Question:</strong> moet ik dit stukje weghalen en zelf iets typen?  """
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """<br>
+                  <strong>True Label:</strong> Question Comprehension<br>
+                  <strong>Predicted Label:</strong> Fix this code / error
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                  Pasting Code Without Explanation → Code/Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7">
+                <div class="accordion-body">
+                  <strong>Question:</strong> def maak_bord():
+    """
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """
+    bord = []
+    for _ in range(RIJEN):
+        bord.append([LEEG] * KOLOMMEN)  # Elke rij is een lijst met lege vakjes
+    return bord<br>
+                  <strong>True Label:</strong> Pasting Code Without Explanation<br>
+                  <strong>Predicted Label:</strong> Code/Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                  Pasting Code Without Explanation → Code/Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8">
+                <div class="accordion-body">
+                  <strong>Question:</strong> # Vier Op Een Rij - Startcode voor Leerlingen
+# --- Constanten ---
+RIJEN = 6
+KOLOMMEN = 7
+SPELER_X = 'X'
+SPELER_O = 'O'
+LEEG = ' '
+# --- Functies ---
+def maak_bord():
+    """
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """
+    bord = []
+    for _ in range(RIJEN):
+        bord.append([LEEG] * KOLOMMEN)  # Elke rij is een lijst met lege vakjes
+    return bord
+def toon_bord(bord):
+    """
+    Print het Vier Op Een Rij bord naar de console.
+    Args:
+        bord (list): De 2D lijst die het bord representeert.
+    """
+    # Print kolomnummers voor makkelijkere invoer door de speler
+    print("  ", end="")
+    for kolom in range(KOLOMMEN):
+        print(f"{kolom+1} ", end="") # Kolomnummers zijn 1-gebaseerd voor de gebruiker
+    print("\n")
+    # Print de rijen en kolommen van het bord
+    for rij in bord:
+        print("| ", end="") # Linker rand
+        for cel in rij:
+            print(f"{cel} | ", end="") # Inhoud van de cel en scheidingsteken
+        print("\n") # Nieuwe regel na elke rij
+        print("+---" * KOLOMMEN + "+") # Scheidingslijn tussen rijen
+    print() # Extra lege regel voor de ruimte
+def laat_stuk_vallen(bord, kolom, speler_stuk):
+    """
+    Laat een stuk van de speler in de laagste beschikbare rij in de gegeven kolom vallen.
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd) waar het stuk in moet vallen.
+        speler_stuk (str): 'X' of 'O' die het stuk van de speler representeert.
+    Retourneert:
+        bool: True als het stuk succesvol is gevallen, False als de kolom vol is.
+    """
+  def laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt):
+   
+    
+    for rij in reversed(bord):
+        if rij[kolom_keuze] == LEEG:
+            
+            rij[kolom_keuze] = speler_aan_beurt
+            break
+    return bord
+    pass # Vervang 'pass' met jullie code
+def is_geldige_locatie(bord, kolom):
+    """
+    Controleert of een kolom een geldige locatie is om een stuk te laten vallen (niet vol).
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd).
+    Retourneert:
+        bool: True als de kolom geldig is, False anders.
+    """
+    # --- JULLIE OPDRACHT: Implementeer deze functie (optioneel) ---
+    pass # Vervang 'pass' met jullie code
+def controleer_winnaar(bord, speler_stuk):
+    """
+    Controleert of de gegeven speler het spel heeft gewonnen.
+    Args:
+        bord (list): Het spelbord.
+        speler_stuk (str): 'X' of 'O' die de speler representeert.
+    Retourneert:
+        bool: True als de speler heeft gewonnen, False anders.
+    """
+    # --- JULLIE OPDRACHT: Implementeer de win-logica (horizontaal, verticaal, diagonaal) ---
+    return False
+def is_bord_vol(bord):
+    """
+    Controleert of het bord volledig vol is (geen zetten meer mogelijk).
+    Args:
+        bord (list): Het spelbord.
+    Retourneert:
+        bool: True als het bord vol is, False anders.
+    """
+    # --- JULLIE OPDRACHT: Implementeer deze functie ---
+    pass
+def speel_spel():
+    """
+    Hoofdfunctie om het Vier Op Een Rij spel in de console te spelen.
+    """
+    bord = maak_bord() # Initialiseer het spelbord
+    speler_aan_beurt = SPELER_X  # Speler X begint
+    spel_over = False
+    print("Welkom bij Vier Op Een Rij!")
+    toon_bord(bord) # Toon het initiële lege bord
+    while not spel_over:
+        # Vraag de speler om een zet
+        while True: # Blijf loopen totdat een geldige zet is ingevoerd
+            try:
+                kolom_keuze = int(input(f"Speler {speler_aan_beurt}, kies een kolom (1-{KOLOMMEN}): ")) - 1
+                if 0 <= kolom_keuze < KOLOMMEN:
+                    if is_geldige_locatie(bord, kolom_keuze):
+                        break
+                    else:
+                        print("Die kolom is vol. Kies een andere kolom.")
+                else:
+                    print(f"Ongeldig kolomnummer. Kies een kolom tussen 1 en {KOLOMMEN}.")
+            except ValueError:
+                print("Ongeldige invoer. Voer een nummer in.")
+        # Laat het stuk vallen
+        laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt)
+        toon_bord(bord)
+        # Controleer op winst of gelijkspel
+        if controleer_winnaar(bord, speler_aan_beurt):
+            print(f"Speler {speler_aan_beurt} wint! Gefeliciteerd!")
+            spel_over = True
+        elif is_bord_vol(bord):
+            print("Gelijkspel! Bord is vol.")
+            spel_over = True
+        else:
+            # Wissel naar de andere speler
+            speler_aan_beurt = SPELER_O if speler_aan_beurt == SPELER_X else SPELER_X
+# --- Start het Spel ---
+if __name__ == "__main__":
+    speel_spel()<br>
+                  <strong>True Label:</strong> Pasting Code Without Explanation<br>
+                  <strong>Predicted Label:</strong> Code/Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading9">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                  Code/Concept Comprehension → Chatbot interaction
+                </button>
+              </h2>
+              <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9">
+                <div class="accordion-body">
+                  <strong>Question:</strong> what das len do<br>
+                  <strong>True Label:</strong> Code/Concept Comprehension<br>
+                  <strong>Predicted Label:</strong> Chatbot interaction
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading10">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                  Code/Concept Comprehension → Chatbot interaction
+                </button>
+              </h2>
+              <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10">
+                <div class="accordion-body">
+                  <strong>Question:</strong> what does .lower do?<br>
+                  <strong>True Label:</strong> Code/Concept Comprehension<br>
+                  <strong>Predicted Label:</strong> Chatbot interaction
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading11">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                  Code/Concept Comprehension → Pasting Code Without Explanation
+                </button>
+              </h2>
+              <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11">
+                <div class="accordion-body">
+                  <strong>Question:</strong> def rekenen1():
+    getal1 = 50
+    getal2 = 5
+    return getal1 + getal2. en bij deze som?<br>
+                  <strong>True Label:</strong> Code/Concept Comprehension<br>
+                  <strong>Predicted Label:</strong> Pasting Code Without Explanation
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading12">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                  Code/Concept Comprehension → Chatbot interaction
+                </button>
+              </h2>
+              <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12">
+                <div class="accordion-body">
+                  <strong>Question:</strong> ik snap het niet hoe werkt dit: for i in range(len(lijst)):
+  print(lijst[i])<br>
+                  <strong>True Label:</strong> Code/Concept Comprehension<br>
+                  <strong>Predicted Label:</strong> Chatbot interaction
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading13">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                  Task Related Delegation → Fix this code / error
+                </button>
+              </h2>
+              <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13">
+                <div class="accordion-body">
+                  <strong>Question:</strong> maak een opdracht zoals dit<br>
+                  <strong>True Label:</strong> Task Related Delegation<br>
+                  <strong>Predicted Label:</strong> Fix this code / error
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading14">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                  Chatbot interaction → Code/Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14">
+                <div class="accordion-body">
+                  <strong>Question:</strong> op welke line moet dit<br>
+                  <strong>True Label:</strong> Chatbot interaction<br>
+                  <strong>Predicted Label:</strong> Code/Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading15">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                  Chatbot interaction → Task Related Delegation
+                </button>
+              </h2>
+              <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15">
+                <div class="accordion-body">
+                  <strong>Question:</strong> leg dit anders uit<br>
+                  <strong>True Label:</strong> Chatbot interaction<br>
+                  <strong>Predicted Label:</strong> Task Related Delegation
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading16">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                  Chatbot interaction → Task Related Delegation
+                </button>
+              </h2>
+              <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16">
+                <div class="accordion-body">
+                  <strong>Question:</strong> maak nog 1 stap<br>
+                  <strong>True Label:</strong> Chatbot interaction<br>
+                  <strong>Predicted Label:</strong> Task Related Delegation
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading17">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                  Chatbot interaction → Code/Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17">
+                <div class="accordion-body">
+                  <strong>Question:</strong> wat is de laatste stap<br>
+                  <strong>True Label:</strong> Chatbot interaction<br>
+                  <strong>Predicted Label:</strong> Code/Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading18">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                  Chatbot interaction → Fix this code / error
+                </button>
+              </h2>
+              <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18">
+                <div class="accordion-body">
+                  <strong>Question:</strong> geef nof 1 stap<br>
+                  <strong>True Label:</strong> Chatbot interaction<br>
+                  <strong>Predicted Label:</strong> Fix this code / error
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading19">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                  Fix this code / error → Chatbot interaction
+                </button>
+              </h2>
+              <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19">
+                <div class="accordion-body">
+                  <strong>Question:</strong> ik heb raise, try en except nog niet geleerd, kan het ook anders?<br>
+                  <strong>True Label:</strong> Fix this code / error<br>
+                  <strong>Predicted Label:</strong> Chatbot interaction
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading20">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                  Fix this code / error → Code/Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20">
+                <div class="accordion-body">
+                  <strong>Question:</strong> hoe fix ik dit stukje  File <tokenize>:54
+    def laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt):<br>
+                  <strong>True Label:</strong> Fix this code / error<br>
+                  <strong>Predicted Label:</strong> Code/Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading21">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                  Fix this code / error → Code/Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="heading21">
+                <div class="accordion-body">
+                  <strong>Question:</strong> Als het deelbaar is door 3 (modulo 3 == 0) print "fizz".<br>
+                  <strong>True Label:</strong> Fix this code / error<br>
+                  <strong>Predicted Label:</strong> Code/Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading22">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                  Fix this code / error → Code/Concept Comprehension
+                </button>
+              </h2>
+              <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22">
+                <div class="accordion-body">
+                  <strong>Question:</strong> kun je een programma maken met beginners codedering<br>
+                  <strong>True Label:</strong> Fix this code / error<br>
+                  <strong>Predicted Label:</strong> Code/Concept Comprehension
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading23">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                  Fix this code / error → Copying Notebook Questions
+                </button>
+              </h2>
+              <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23">
+                <div class="accordion-body">
+                  <strong>Question:</strong> is de code nogsteeds goed voor deze opdracht en zo niet verbeter het Schrijf een functie met 2 argumenten:
+getal1 getal2 Return de grootste van deze 2 getallen.
+Voer de functie daarna uit met verschillende waarden en print de uitkomst.<br>
+                  <strong>True Label:</strong> Fix this code / error<br>
+                  <strong>Predicted Label:</strong> Copying Notebook Questions
+                </div>
+              </div>
+            </div>
+            
+        </div>
+        
+          </div>
+          
+          <!-- Types Tab -->
+          <div class="tab-pane fade" id="type" role="tabpanel">
+            <h2>Types Evaluation</h2>
+            
+            <h3>Confusion Matrix</h3>
+            <div class="mb-4">
+              <img src="images/type_confusion_matrix.png" alt="Type Confusion Matrix" class="img-fluid">
+            </div>
+            
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Type Distribution</h3>
+                <img src="images/type_distribution.png" alt="Type Distribution" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>Classification Metrics</h3>
+                <img src="images/type_metrics.png" alt="Type Metrics" class="img-fluid">
+              </div>
+            </div>
+            
+            <h3>Detailed Metrics</h3>
+            
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Label</th>
+              <th>Precision</th>
+              <th>Recall</th>
+              <th>F1-score</th>
+              <th>Support</th>
+            </tr>
+          </thead>
+          <tbody>
+        
+                <tr>
+                  <td>executive</td>
+                  <td>0.7600</td>
+                  <td>0.7600</td>
+                  <td>0.7600</td>
+                  <td>25.0</td>
+                </tr>
+                
+                <tr>
+                  <td>instrumental</td>
+                  <td>0.8767</td>
+                  <td>0.8889</td>
+                  <td>0.8828</td>
+                  <td>72.0</td>
+                </tr>
+                
+                <tr>
+                  <td>other</td>
+                  <td>0.5556</td>
+                  <td>0.5000</td>
+                  <td>0.5263</td>
+                  <td>10.0</td>
+                </tr>
+                
+                <tr class="table-info">
+                  <td>macro avg</td>
+                  <td>0.7308</td>
+                  <td>0.7163</td>
+                  <td>0.7230</td>
+                  <td>107.0</td>
+                </tr>
+                
+                <tr class="table-info">
+                  <td>weighted avg</td>
+                  <td>0.8194</td>
+                  <td>0.8224</td>
+                  <td>0.8208</td>
+                  <td>107.0</td>
+                </tr>
+                
+            <tr class="table-success">
+              <td>accuracy</td>
+              <td colspan="3">0.8224</td>
+              <td>107.0</td>
+            </tr>
+            
+          </tbody>
+        </table>
+        
+            
+            <h3>Misclassified Examples (19 of 107)</h3>
+            
+        <div class="accordion" id="misclassifiedAccordion">
+        
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading0">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                  instrumental → other
+                </button>
+              </h2>
+              <div id="collapse0" class="accordion-collapse collapse" aria-labelledby="heading0">
+                <div class="accordion-body">
+                  <strong>Question:</strong> what das len do<br>
+                  <strong>True Label:</strong> instrumental<br>
+                  <strong>Predicted Label:</strong> other
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                  instrumental → executive
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1">
+                <div class="accordion-body">
+                  <strong>Question:</strong> maak een opdracht zoals dit<br>
+                  <strong>True Label:</strong> instrumental<br>
+                  <strong>Predicted Label:</strong> executive
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  instrumental → other
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2">
+                <div class="accordion-body">
+                  <strong>Question:</strong> what does .lower do?<br>
+                  <strong>True Label:</strong> instrumental<br>
+                  <strong>Predicted Label:</strong> other
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  instrumental → executive
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3">
+                <div class="accordion-body">
+                  <strong>Question:</strong> def rekenen1():
+    getal1 = 50
+    getal2 = 5
+    return getal1 + getal2. en bij deze som?<br>
+                  <strong>True Label:</strong> instrumental<br>
+                  <strong>Predicted Label:</strong> executive
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  instrumental → executive
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4">
+                <div class="accordion-body">
+                  <strong>Question:</strong> en print de som van de elementen in de lijst<br>
+                  <strong>True Label:</strong> instrumental<br>
+                  <strong>Predicted Label:</strong> executive
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  instrumental → executive
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5">
+                <div class="accordion-body">
+                  <strong>Question:</strong> en als je de elementen in de lijst allemaal in een nieuwe lijst wil zetten, maar dan alles 2 keer zo groot<br>
+                  <strong>True Label:</strong> instrumental<br>
+                  <strong>Predicted Label:</strong> executive
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                  instrumental → other
+                </button>
+              </h2>
+              <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6">
+                <div class="accordion-body">
+                  <strong>Question:</strong> ik snap het niet hoe werkt dit: for i in range(len(lijst)):
+  print(lijst[i])<br>
+                  <strong>True Label:</strong> instrumental<br>
+                  <strong>Predicted Label:</strong> other
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                  instrumental → executive
+                </button>
+              </h2>
+              <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7">
+                <div class="accordion-body">
+                  <strong>Question:</strong> moet ik dit stukje weghalen en zelf iets typen?  """
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """<br>
+                  <strong>True Label:</strong> instrumental<br>
+                  <strong>Predicted Label:</strong> executive
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                  executive → other
+                </button>
+              </h2>
+              <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8">
+                <div class="accordion-body">
+                  <strong>Question:</strong> ik heb raise, try en except nog niet geleerd, kan het ook anders?<br>
+                  <strong>True Label:</strong> executive<br>
+                  <strong>Predicted Label:</strong> other
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading9">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                  executive → instrumental
+                </button>
+              </h2>
+              <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9">
+                <div class="accordion-body">
+                  <strong>Question:</strong> def maak_bord():
+    """
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """
+    bord = []
+    for _ in range(RIJEN):
+        bord.append([LEEG] * KOLOMMEN)  # Elke rij is een lijst met lege vakjes
+    return bord<br>
+                  <strong>True Label:</strong> executive<br>
+                  <strong>Predicted Label:</strong> instrumental
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading10">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                  executive → instrumental
+                </button>
+              </h2>
+              <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10">
+                <div class="accordion-body">
+                  <strong>Question:</strong> # Vier Op Een Rij - Startcode voor Leerlingen
+# --- Constanten ---
+RIJEN = 6
+KOLOMMEN = 7
+SPELER_X = 'X'
+SPELER_O = 'O'
+LEEG = ' '
+# --- Functies ---
+def maak_bord():
+    """
+    Maakt een leeg Vier Op Een Rij bord als een 2D lijst.
+    Retourneert:
+        list: Een 2D lijst die het bord representeert.
+    """
+    bord = []
+    for _ in range(RIJEN):
+        bord.append([LEEG] * KOLOMMEN)  # Elke rij is een lijst met lege vakjes
+    return bord
+def toon_bord(bord):
+    """
+    Print het Vier Op Een Rij bord naar de console.
+    Args:
+        bord (list): De 2D lijst die het bord representeert.
+    """
+    # Print kolomnummers voor makkelijkere invoer door de speler
+    print("  ", end="")
+    for kolom in range(KOLOMMEN):
+        print(f"{kolom+1} ", end="") # Kolomnummers zijn 1-gebaseerd voor de gebruiker
+    print("\n")
+    # Print de rijen en kolommen van het bord
+    for rij in bord:
+        print("| ", end="") # Linker rand
+        for cel in rij:
+            print(f"{cel} | ", end="") # Inhoud van de cel en scheidingsteken
+        print("\n") # Nieuwe regel na elke rij
+        print("+---" * KOLOMMEN + "+") # Scheidingslijn tussen rijen
+    print() # Extra lege regel voor de ruimte
+def laat_stuk_vallen(bord, kolom, speler_stuk):
+    """
+    Laat een stuk van de speler in de laagste beschikbare rij in de gegeven kolom vallen.
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd) waar het stuk in moet vallen.
+        speler_stuk (str): 'X' of 'O' die het stuk van de speler representeert.
+    Retourneert:
+        bool: True als het stuk succesvol is gevallen, False als de kolom vol is.
+    """
+  def laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt):
+   
+    
+    for rij in reversed(bord):
+        if rij[kolom_keuze] == LEEG:
+            
+            rij[kolom_keuze] = speler_aan_beurt
+            break
+    return bord
+    pass # Vervang 'pass' met jullie code
+def is_geldige_locatie(bord, kolom):
+    """
+    Controleert of een kolom een geldige locatie is om een stuk te laten vallen (niet vol).
+    Args:
+        bord (list): Het spelbord.
+        kolom (int): De kolomindex (0-gebaseerd).
+    Retourneert:
+        bool: True als de kolom geldig is, False anders.
+    """
+    # --- JULLIE OPDRACHT: Implementeer deze functie (optioneel) ---
+    pass # Vervang 'pass' met jullie code
+def controleer_winnaar(bord, speler_stuk):
+    """
+    Controleert of de gegeven speler het spel heeft gewonnen.
+    Args:
+        bord (list): Het spelbord.
+        speler_stuk (str): 'X' of 'O' die de speler representeert.
+    Retourneert:
+        bool: True als de speler heeft gewonnen, False anders.
+    """
+    # --- JULLIE OPDRACHT: Implementeer de win-logica (horizontaal, verticaal, diagonaal) ---
+    return False
+def is_bord_vol(bord):
+    """
+    Controleert of het bord volledig vol is (geen zetten meer mogelijk).
+    Args:
+        bord (list): Het spelbord.
+    Retourneert:
+        bool: True als het bord vol is, False anders.
+    """
+    # --- JULLIE OPDRACHT: Implementeer deze functie ---
+    pass
+def speel_spel():
+    """
+    Hoofdfunctie om het Vier Op Een Rij spel in de console te spelen.
+    """
+    bord = maak_bord() # Initialiseer het spelbord
+    speler_aan_beurt = SPELER_X  # Speler X begint
+    spel_over = False
+    print("Welkom bij Vier Op Een Rij!")
+    toon_bord(bord) # Toon het initiële lege bord
+    while not spel_over:
+        # Vraag de speler om een zet
+        while True: # Blijf loopen totdat een geldige zet is ingevoerd
+            try:
+                kolom_keuze = int(input(f"Speler {speler_aan_beurt}, kies een kolom (1-{KOLOMMEN}): ")) - 1
+                if 0 <= kolom_keuze < KOLOMMEN:
+                    if is_geldige_locatie(bord, kolom_keuze):
+                        break
+                    else:
+                        print("Die kolom is vol. Kies een andere kolom.")
+                else:
+                    print(f"Ongeldig kolomnummer. Kies een kolom tussen 1 en {KOLOMMEN}.")
+            except ValueError:
+                print("Ongeldige invoer. Voer een nummer in.")
+        # Laat het stuk vallen
+        laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt)
+        toon_bord(bord)
+        # Controleer op winst of gelijkspel
+        if controleer_winnaar(bord, speler_aan_beurt):
+            print(f"Speler {speler_aan_beurt} wint! Gefeliciteerd!")
+            spel_over = True
+        elif is_bord_vol(bord):
+            print("Gelijkspel! Bord is vol.")
+            spel_over = True
+        else:
+            # Wissel naar de andere speler
+            speler_aan_beurt = SPELER_O if speler_aan_beurt == SPELER_X else SPELER_X
+# --- Start het Spel ---
+if __name__ == "__main__":
+    speel_spel()<br>
+                  <strong>True Label:</strong> executive<br>
+                  <strong>Predicted Label:</strong> instrumental
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading11">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                  executive → instrumental
+                </button>
+              </h2>
+              <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11">
+                <div class="accordion-body">
+                  <strong>Question:</strong> hoe fix ik dit stukje  File <tokenize>:54
+    def laat_stuk_vallen(bord, kolom_keuze, speler_aan_beurt):<br>
+                  <strong>True Label:</strong> executive<br>
+                  <strong>Predicted Label:</strong> instrumental
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading12">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                  executive → instrumental
+                </button>
+              </h2>
+              <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12">
+                <div class="accordion-body">
+                  <strong>Question:</strong> Als het deelbaar is door 3 (modulo 3 == 0) print "fizz".<br>
+                  <strong>True Label:</strong> executive<br>
+                  <strong>Predicted Label:</strong> instrumental
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading13">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                  executive → instrumental
+                </button>
+              </h2>
+              <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13">
+                <div class="accordion-body">
+                  <strong>Question:</strong> kun je een programma maken met beginners codedering<br>
+                  <strong>True Label:</strong> executive<br>
+                  <strong>Predicted Label:</strong> instrumental
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading14">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                  other → instrumental
+                </button>
+              </h2>
+              <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14">
+                <div class="accordion-body">
+                  <strong>Question:</strong> op welke line moet dit<br>
+                  <strong>True Label:</strong> other<br>
+                  <strong>Predicted Label:</strong> instrumental
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading15">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                  other → instrumental
+                </button>
+              </h2>
+              <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15">
+                <div class="accordion-body">
+                  <strong>Question:</strong> leg dit anders uit<br>
+                  <strong>True Label:</strong> other<br>
+                  <strong>Predicted Label:</strong> instrumental
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading16">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                  other → instrumental
+                </button>
+              </h2>
+              <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16">
+                <div class="accordion-body">
+                  <strong>Question:</strong> maak nog 1 stap<br>
+                  <strong>True Label:</strong> other<br>
+                  <strong>Predicted Label:</strong> instrumental
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading17">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                  other → instrumental
+                </button>
+              </h2>
+              <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17">
+                <div class="accordion-body">
+                  <strong>Question:</strong> wat is de laatste stap<br>
+                  <strong>True Label:</strong> other<br>
+                  <strong>Predicted Label:</strong> instrumental
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading18">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                  other → executive
+                </button>
+              </h2>
+              <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18">
+                <div class="accordion-body">
+                  <strong>Question:</strong> geef nof 1 stap<br>
+                  <strong>True Label:</strong> other<br>
+                  <strong>Predicted Label:</strong> executive
+                </div>
+              </div>
+            </div>
+            
+        </div>
+        
+          </div>
+        </div>
+        
+        <footer class="mt-5 pt-5 text-muted border-top">
+          &copy; 2025 JELAI Classifier Evaluation
+        </footer>
+      </div>
+    </body>
+    </html>
+    

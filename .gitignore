@@ -1,3 +1,4 @@
 my_saved_model/*
 results/*
 hyperparameter_results/*
+venv/*
