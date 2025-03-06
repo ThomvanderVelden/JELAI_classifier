@@ -1,6 +1,6 @@
 # JELAI Classifier
 
-This repository contains the source code and resources for part of my Master's Thesis project on multi-class classification of Dutch questions. The classifier is built using Transformers (RobBERT) and PyTorch, and it categorizes questions into various categories with a custom training routine to handle imbalanced data.
+This repository contains the source code and resources for part of my Master's Thesis project. The classifier is built using Transformers (RobBERT) and PyTorch, and it categorizes questions into various categories with a custom training routine.
 
 ## Overview
 The JELAI Classifier:

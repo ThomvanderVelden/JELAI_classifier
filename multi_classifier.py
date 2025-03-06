@@ -34,9 +34,11 @@ DO_TRAIN = (
     False  # <--- Toggle. If True: train model. If False: load from existing checkpoint.
 )
 CHECKPOINT_DIR = "my_saved_model"
-DATA_PATH = "/Users/thomvandervelden/dev/JELAI_classifier/questions_before_midterm.csv"
+DATA_PATH = (
+    "/Users/thomvandervelden/dev/JELAI_classifier/data/questions_before_midterm.csv"
+)
 INFERENCE_FILE = (
-    "/Users/thomvandervelden/dev/JELAI_classifier/questions_after_midterm.csv"
+    "/Users/thomvandervelden/dev/JELAI_classifier/data/questions_after_midterm.csv"
 )
 
 # Output file to write predictions
@@ -79,7 +81,7 @@ def load_data(file_path):
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Data file not found at {file_path}")
     df = pd.read_csv(
-        "questions_before_midterm.csv",
+        "data/questions_before_midterm.csv",
         sep=",",
         quotechar="'",
         escapechar="\\",
@@ -112,7 +114,6 @@ class_weights = compute_class_weight(
     classes=classes,
     y=train_df["label"],
 )
-
 class_weights_tensor = torch.FloatTensor(class_weights).to(device)
 
 
@@ -185,16 +186,16 @@ val_dataset = QuestionDataset(val_encodings, val_labels)
 training_args = TrainingArguments(
     output_dir="./results",
     eval_strategy="epoch",
-    learning_rate=4.020084560964316e-05,
-    per_device_train_batch_size=16,
-    per_device_eval_batch_size=16,
+    learning_rate=3.100652726283406e-05,
+    per_device_train_batch_size=4,
+    per_device_eval_batch_size=4,
     num_train_epochs=25,
-    weight_decay=0.1783475858723165,
+    weight_decay=0.01923838995198125,
     load_best_model_at_end=True,
     metric_for_best_model="eval_loss",
     save_strategy="epoch",
-    warmup_ratio=0.09403523246342857,
-    gradient_accumulation_steps=4,
+    warmup_ratio=0.111937633641739,
+    gradient_accumulation_steps=2,
 )
 
 
@@ -206,6 +207,10 @@ class CustomTrainer(Trainer):
     A custom Trainer that applies our class weights in the CrossEntropyLoss.
     """
 
+    def __init__(self, class_weights_tensor=None, **kwargs):
+        super().__init__(**kwargs)
+        self.class_weights_tensor = class_weights_tensor
+
     def compute_loss(
         self, model, inputs, return_outputs=False, num_items_in_batch=None
     ):
@@ -214,7 +219,13 @@ class CustomTrainer(Trainer):
         logits = outputs.logits
 
         # Weighted cross-entropy for multi-class (10 labels)
-        loss_fct = torch.nn.CrossEntropyLoss(weight=class_weights_tensor)
+        # Use provided weights or default to the global class_weights_tensor
+        weights = (
+            self.class_weights_tensor
+            if self.class_weights_tensor is not None
+            else class_weights_tensor
+        )
+        loss_fct = torch.nn.CrossEntropyLoss(weight=weights)
         loss = loss_fct(logits.view(-1, 10), labels.view(-1))
 
         return (loss, outputs) if return_outputs else loss

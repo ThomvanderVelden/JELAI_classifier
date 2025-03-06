@@ -1,5 +1,6 @@
 import pandas as pd
-from multi_classifier import classify_question, LABEL_MAP
+
+from multi_classifier import LABEL_MAP, classify_question
 
 # Mapping from numeric label to type
 CATEGORY_TYPE = {
@@ -131,6 +132,8 @@ def evaluate_classifier(ground_truth_file, report_file):
 
 # Example usage:
 if __name__ == "__main__":
-    ground_truth_file = "/Users/thomvandervelden/dev/JELAI_classifier/ground_truth.xlsx"
+    ground_truth_file = (
+        "/Users/thomvandervelden/dev/JELAI_classifier/data/ground_truth.xlsx"
+    )
     report_file = "/Users/thomvandervelden/dev/JELAI_classifier/evaluation_report.txt"
     evaluate_classifier(ground_truth_file, report_file)
